@@ -93,12 +93,12 @@ TextureImporter:
       name: ProtaBueno_0
       rect:
         serializedVersion: 2
-        x: 220
-        y: 1617
-        width: 204
-        height: 210
+        x: 215
+        y: 1618
+        width: 213
+        height: 214
       alignment: 9
-      pivot: {x: 0.41886783, y: 0.10592971}
+      pivot: {x: 0.42464337, y: 0.099277385}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -113,12 +113,12 @@ TextureImporter:
       name: ProtaBueno_1
       rect:
         serializedVersion: 2
-        x: 1578
-        y: 1582
-        width: 120
-        height: 154
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1573
+        y: 1577
+        width: 130
+        height: 164
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -133,12 +133,12 @@ TextureImporter:
       name: ProtaBueno_2
       rect:
         serializedVersion: 2
-        x: 291
-        y: 1170
-        width: 62
-        height: 86
+        x: 285
+        y: 1164
+        width: 74
+        height: 98
       alignment: 9
-      pivot: {x: 0.80727905, y: 0.88102543}
+      pivot: {x: 0.75745004, y: 0.83436924}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: ProtaBueno_3
       rect:
         serializedVersion: 2
-        x: 1578
-        y: 1027
-        width: 62
-        height: 86
+        x: 1572
+        y: 1021
+        width: 74
+        height: 98
       alignment: 9
-      pivot: {x: 0.24353224, y: 0.887393}
+      pivot: {x: 0.28512326, y: 0.83995706}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,12 +173,12 @@ TextureImporter:
       name: ProtaBueno_4
       rect:
         serializedVersion: 2
-        x: 259
-        y: 545
-        width: 75
-        height: 104
+        x: 253
+        y: 539
+        width: 79
+        height: 100
       alignment: 9
-      pivot: {x: 0.4525472, y: 0.7692807}
+      pivot: {x: 0.5055828, y: 0.8600519}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: ProtaBueno_5
       rect:
         serializedVersion: 2
-        x: 1527
-        y: 547
-        width: 55
-        height: 87
+        x: 1524
+        y: 542
+        width: 61
+        height: 93
       alignment: 9
-      pivot: {x: 0.45845392, y: 0.8323441}
+      pivot: {x: 0.4625404, y: 0.83240795}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,6 +220,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
+  userData: 636841167808217295
   assetBundleName: 
   assetBundleVariant: 
