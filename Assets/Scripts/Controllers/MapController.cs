@@ -58,7 +58,7 @@ public class MapController : MonoBehaviour {
         Gizmos.color = Color.white;
         Gizmos.DrawWireCube(transform.position, bounds);
 
-        Gizmos.color = Color.blue;
-        //Gizmos.draw
+        Gizmos.DrawIcon(respawnPoint, "home.png", true);
+        Gizmos.DrawWireSphere(respawnPoint, 0.05f);
     }
 }
