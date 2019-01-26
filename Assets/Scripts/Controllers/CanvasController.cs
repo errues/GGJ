@@ -10,7 +10,6 @@ public class CanvasController : MonoBehaviour {
     }
     
     public void StartTimeBar(CombatRoom room) {
-        timeBar.gameObject.SetActive(true);
         timeBar.StartRunning(room);
     }
 }

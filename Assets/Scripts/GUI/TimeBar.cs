@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TimeBar : MonoBehaviour {
+
+    public GameObject barParent;
+
     private float remainingTime;
     private float maxTime;
     private float originalWidth;
@@ -20,10 +23,11 @@ public class TimeBar : MonoBehaviour {
     }
 
     private void Start() {
-        gameObject.SetActive(false);
+        barParent.SetActive(false);
     }
 
     public void StartRunning(CombatRoom room) {
+        barParent.SetActive(true);
         currentRoom = room;
         remainingTime = room.GetRoomTime();
         maxTime = room.GetRoomTime();
@@ -45,6 +49,6 @@ public class TimeBar : MonoBehaviour {
         running = false;
         currentRoom.Finish();
         bar.sizeDelta = new Vector2(originalWidth, bar.sizeDelta.y);
-        gameObject.SetActive(false);
+        barParent.SetActive(false);
     }
 }
