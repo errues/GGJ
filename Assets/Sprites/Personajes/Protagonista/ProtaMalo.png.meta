@@ -105,7 +105,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b08fbaa8184cdd4aa84d688b278bef2
+      spriteID: 9c03e56b3d06def4a8f3c6ac249b2787
       vertices: []
       indices: 
       edges: []
@@ -114,18 +114,18 @@ TextureImporter:
       name: ProtaMalo_1
       rect:
         serializedVersion: 2
-        x: 1401
-        y: 1378
-        width: 137
-        height: 159
+        x: 1400
+        y: 1377
+        width: 138
+        height: 160
       alignment: 9
-      pivot: {x: 0.5, y: 0.49999997}
+      pivot: {x: 0.5036232, y: 0.503125}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a7e72587a0efbd42a958e23d9de5d93
+      spriteID: c9a4670dc8d274e4eaf86e0cac03bfa0
       vertices: []
       indices: 
       edges: []
@@ -145,7 +145,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b24bc49f9af8a7541aee704ea6cc0aec
+      spriteID: cbf5d9f0e48a1fe4da567cd9ca4c4907
       vertices: []
       indices: 
       edges: []
@@ -165,7 +165,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 049ce9705eeaa64498c3662e295fd026
+      spriteID: 7ce964bd2f0edb84e9c2c568f6bb2750
       vertices: []
       indices: 
       edges: []
@@ -179,13 +179,13 @@ TextureImporter:
         width: 137
         height: 66
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.8732576, y: 0.63835746}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dd51506a17892040a84c508a6f9b234
+      spriteID: a38ce9e8592059747b51a929bc1f516c
       vertices: []
       indices: 
       edges: []
@@ -205,7 +205,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5abf6510b042d848abd26755db57dbf
+      spriteID: 924ce243324a81545bd3adc8af15b95a
       vertices: []
       indices: 
       edges: []
@@ -225,7 +225,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f80208116ddf3774588b8b079355bee5
+      spriteID: e43726c738f77a949b8fe2ce97864e9d
       vertices: []
       indices: 
       edges: []
@@ -241,6 +241,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 636841234449409178
+  userData: 636841280904585878
   assetBundleName: 
   assetBundleVariant: 
