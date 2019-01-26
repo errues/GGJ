@@ -5,8 +5,8 @@ using UnityEngine;
 public class CameraController : MonoBehaviour {
 
     [Header("Camera Adjust Options")]
+    public float mapTransitionSpeed = 1f;
     public AnimationCurve cameraZoomCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
-
     public AnimationCurve cameraMovementCurve = AnimationCurve.Linear(0f,0f,1f,1f);
 
     private float transitionSpeed;
@@ -47,19 +47,25 @@ public class CameraController : MonoBehaviour {
             mainCamera.orthographicSize = CalculateCameraSize(mapController.bounds);
         }
         else {
-            cameraDestPosition = new Vector3(mapController.transform.position.x, mapController.transform.position.y, transform.position.z);
-            if (movementCoroutine != null) {
-                StopCoroutine(movementCoroutine);
-            }
-            movementCoroutine = StartCoroutine(MoveCamera());
-
-            cameraDestSize = CalculateCameraSize(mapController.bounds);
-            if (zoomCoroutine != null) {
-                StopCoroutine(zoomCoroutine);
-            }
-            zoomCoroutine = StartCoroutine(ZoomCamera());
+            FocusMap(mapTransitionSpeed);
         }
     }
+
+    public void FocusMap(float fadeSpeed) {
+        transitionSpeed = fadeSpeed;
+        cameraDestPosition = new Vector3(mapController.transform.position.x, mapController.transform.position.y, transform.position.z);
+        if (movementCoroutine != null) {
+            StopCoroutine(movementCoroutine);
+        }
+        movementCoroutine = StartCoroutine(MoveCamera());
+
+        cameraDestSize = CalculateCameraSize(mapController.bounds);
+        if (zoomCoroutine != null) {
+            StopCoroutine(zoomCoroutine);
+        }
+        zoomCoroutine = StartCoroutine(ZoomCamera());
+    }
+
 
     public void FocusRoom(CombatRoom room, float fadingSpeed, bool inmediate = false) {
         if (inmediate) {

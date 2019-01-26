@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b748e3302fcbe4145a060159bfcb2187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapTransitionSpeed: 2
   cameraZoomCurve:
     serializedVersion: 2
     m_Curve:
@@ -119,7 +120,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  cameraZoomSpeed: 4
   cameraMovementCurve:
     serializedVersion: 2
     m_Curve:
@@ -144,4 +144,3 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  cameraMovementSpeed: 4
