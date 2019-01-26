@@ -12,14 +12,19 @@ public class CharacterMovement : MonoBehaviour {
     [SerializeField]
     private List<Vector2> drivenPath = new List<Vector2>();
 
-    private bool drivenMovemen = false;
-    private Rigidbody2D r2D;
+    [Header("Character Sprites")]
+    [SerializeField]
+    private Transform characterSprites;
+    public bool isFacingRight = true;
+
+    private Animator characterAnimator;
 
     private Vector3 initialMovementPosition;
     private Vector3 destMovementPosition;
     private float normalizedDrivenMovementSpeed;
     private float lerpMovementStep;
 
+    private bool drivenMovemen = false;
     private Vector3 savedLocation;
 
     public bool EnabledInteraction { get; set; }
@@ -30,9 +35,13 @@ public class CharacterMovement : MonoBehaviour {
     }
 
     private void Awake() {
-        r2D = GetComponent<Rigidbody2D>();
-        if(drivenPath.Count > 0) {
+        characterAnimator = GetComponentInChildren<Animator>();
+
+        if (drivenPath.Count > 0) {
             DoNextDrivenMovement();
+        }
+        if(characterSprites == null) {
+            characterSprites = transform;
         }
 
         EnabledInteraction = true;
@@ -68,18 +77,28 @@ public class CharacterMovement : MonoBehaviour {
 
     private void FixedUpdate() {
         if (!drivenMovemen && EnabledInteraction) {
-            // Comprobamos si estamos intentando desplazarnos
+            //Desplaza el personaje en el eje horizontal
             float horizontalMovement = Input.GetAxisRaw("Horizontal");
             if (horizontalMovement != 0) {
                 transform.Translate(Vector3.right * movementSpeed * Time.fixedDeltaTime * horizontalMovement);
             }
-
+            //Desplaza el personaje en el eje vertical
             float verticalMovement = Input.GetAxisRaw("Vertical");
             if (verticalMovement != 0) {
                 transform.Translate(Vector3.up * movementSpeed * Time.fixedDeltaTime * verticalMovement);
             }
 
-            r2D.MovePosition(transform.position);
+            //Coloca el personaje mirando hacia la dirección de movimiento
+            if (horizontalMovement > 0 && !isFacingRight) {
+                isFacingRight = !isFacingRight;
+                characterSprites.rotation = Quaternion.Euler(characterSprites.rotation.eulerAngles.x, 0f, characterSprites.rotation.eulerAngles.z);
+            } else if (horizontalMovement < 0 && isFacingRight) {
+                isFacingRight = !isFacingRight;
+                characterSprites.rotation = Quaternion.Euler(characterSprites.rotation.eulerAngles.x, 180f, characterSprites.rotation.eulerAngles.z);
+            }
+
+            //Establece la animación de andar
+            characterAnimator.SetBool("Walk", (horizontalMovement != 0 || verticalMovement != 0));
         } else {
             if (lerpMovementStep <= 1f) {
                 lerpMovementStep += normalizedDrivenMovementSpeed * Time.fixedDeltaTime;
