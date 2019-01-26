@@ -19,6 +19,8 @@ public class CharacterMovement : MonoBehaviour {
     private float normalizedDrivenMovementSpeed;
     private float lerpMovementStep;
 
+    private Vector3 savedLocation;
+
     public bool EnabledInteraction { get; set; }
 
     private void Awake() {
@@ -44,6 +46,15 @@ public class CharacterMovement : MonoBehaviour {
         } else {
             drivenMovemen = false;
         }
+    }
+
+    public void SaveCurrentLocation() {
+        savedLocation = transform.position;
+    }
+
+    public void GoToSavedLocation() {
+        drivenPath = new List<Vector2>();
+        DoNextDrivenMovement();
     }
 
     private void FixedUpdate() {
