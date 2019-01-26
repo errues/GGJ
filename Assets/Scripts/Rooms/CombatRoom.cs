@@ -73,7 +73,6 @@ public class CombatRoom : Room {
         base.Update();
 
         if (fadingIn || fadingOut) {
-            print(fadingIn);
             spriteRenderer.color = new Color(1, 1, 1, alpha);
         }
 

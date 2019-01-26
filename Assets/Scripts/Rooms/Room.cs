@@ -32,7 +32,6 @@ public abstract class Room : MonoBehaviour {
     }
 
     public void FadeIn() {
-        print(name);
         fadingOut = false;
         fadingIn = true;
 

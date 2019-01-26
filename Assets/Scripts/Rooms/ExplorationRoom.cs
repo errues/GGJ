@@ -62,11 +62,8 @@ public class ExplorationRoom : Room {
 
     private IEnumerator WaitAndRun() {
         yield return new WaitUntil(() => fadingOut == false);
-        print(1);
         yield return new WaitUntil(() => assignedCombatRoom.IsFadingIn == false);
-        print(2);
         yield return new WaitUntil(() => characterMovement.IsInDrivenMovement == false);
-        print(3);
 
         characterMovement.EnabledInteraction = true;
         assignedCombatRoom.Run();
