@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MapController : MonoBehaviour {
+    [Header("Home")]
+    public Vector2 respawnPoint = Vector2.zero;
+
+    [Header("Rooms")]
     public List<ExplorationRoom> explorationRooms;
     public List<CombatRoom> combatRooms;
 
@@ -37,10 +41,6 @@ public class MapController : MonoBehaviour {
         }
     }
 
-    private void OnDrawGizmos() {
-        Gizmos.color = Color.white;
-        Gizmos.DrawWireCube(transform.position, bounds);
-    }
 
     public void FadeInMap() {
         foreach(Room r in explorationRooms) {
@@ -52,5 +52,13 @@ public class MapController : MonoBehaviour {
         foreach (Room r in explorationRooms) {
             r.FadeOut();
         }
+    }
+
+    private void OnDrawGizmos() {
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireCube(transform.position, bounds);
+
+        Gizmos.color = Color.blue;
+        //Gizmos.draw
     }
 }
