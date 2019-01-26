@@ -7,7 +7,7 @@ public class TimeBar : MonoBehaviour {
     private float maxTime;
     private float originalWidth;
 
-    private Room currentRoom;
+    private CombatRoom currentRoom;
 
     private RectTransform bar;
 
@@ -23,10 +23,10 @@ public class TimeBar : MonoBehaviour {
         gameObject.SetActive(false);
     }
 
-    public void StartRunning(Room room) {
+    public void StartRunning(CombatRoom room) {
         currentRoom = room;
-        remainingTime = room.roomTime;
-        maxTime = room.roomTime;
+        remainingTime = room.GetRoomTime();
+        maxTime = room.GetRoomTime();
         running = true;
     }
 
@@ -43,7 +43,7 @@ public class TimeBar : MonoBehaviour {
 
     private void Finish() {
         running = false;
-        currentRoom.Enlighten();
+        currentRoom.Finish();
         bar.sizeDelta = new Vector2(originalWidth, bar.sizeDelta.y);
         gameObject.SetActive(false);
     }

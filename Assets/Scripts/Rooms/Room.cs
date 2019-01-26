@@ -5,9 +5,7 @@ using UnityEngine;
 public class Room : MonoBehaviour {
     public SpriteRenderer lightRoomSprite;
 
-    public float fadingSpeed = 1;
-
-    public float roomTime;
+    public float fadingSpeed = 1;    
 
     private bool enlighted;
     private bool fading;

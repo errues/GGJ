@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5404408777412727165}
-  m_Layer: 0
+  - component: {fileID: 1618886649}
+  m_Layer: 9
   m_Name: RunningDog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,6 +32,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1618886649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404408777412727164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b51ab27e3e66324c97b1405127b9abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+    speed: 1
+    randomRotation: 1
+    startWithPrevious: 0
 --- !u!1 &5404408778162053190
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,7 +59,7 @@ GameObject:
   - component: {fileID: 5404408778162053189}
   - component: {fileID: 5404408778162053188}
   - component: {fileID: 5404408778162053191}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BolaNegra
   m_TagString: Untagged
   m_Icon: {fileID: 0}

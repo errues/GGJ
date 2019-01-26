@@ -25,7 +25,7 @@ public class PassiveEnemy : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (!completed) {
-            canvasController.StartTimeBar(assignedRoom);
+            // Hacer la transición a la habitación de combate y iniciar la barra de tiempo
         }
     }
 }
