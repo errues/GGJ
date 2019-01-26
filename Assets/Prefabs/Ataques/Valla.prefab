@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1110475839809898085}
   - component: {fileID: 1110475839809898082}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VallaCrtl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1110475841196524230}
   - component: {fileID: 1110475841196524231}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: valla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: 861070ee0f8f3fb439e3fc46610f39c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -142,7 +142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1110475841381586575}
   - component: {fileID: 1110475841381586572}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: valla_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1110475841459113885}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Valla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1110475841480196359}
   - component: {fileID: 1110475841480196356}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: valla_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
