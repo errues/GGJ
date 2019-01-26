@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 7ffc42c47acf1024cad674ee765e0c40
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Head
+    21300002: BODY
+    21300004: LEFT ARM
+    21300006: RIGHT ARM
+    21300008: RIGHT LEG
+    21300010: LEFT LEG
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +88,131 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Head
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 1358
+        width: 130
+        height: 136
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39eb5bc70204f9479b3e859a6372541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BODY
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1179
+        width: 141
+        height: 191
+      alignment: 9
+      pivot: {x: 0.49645388, y: 0.4973822}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9be8d16eebfd74ba99cac6e5f2aa59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFT ARM
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 1043
+        width: 75
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20fc31c8434e5614387d49b7d481142d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHT ARM
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 775
+        width: 77
+        height: 163
+      alignment: 9
+      pivot: {x: 0.4935065, y: 0.493865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600e174590de7e04da490609b2d1d07f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHT LEG
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 774
+        width: 72
+        height: 282
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49822694}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2f00bbad05d7b42a61d21e0cb35bcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFT LEG
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 658
+        width: 72
+        height: 281
+      alignment: 9
+      pivot: {x: 0.49305555, y: 0.49822062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9db73496e623b45a5906cba3c43e2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5bf8fd9eda94c6d4483cc0fc0c5f992f
     vertices: []
     indices: 
     edges: []
@@ -94,6 +220,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
+  userData: 636841438922811085
   assetBundleName: 
   assetBundleVariant: 

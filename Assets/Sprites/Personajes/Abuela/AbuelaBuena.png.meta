@@ -1,7 +1,11 @@
 fileFormatVersion: 2
 guid: 3eaab7fd92760e54abeb3521f4b48865
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: head
+    21300002: right arm
+    21300004: body
+    21300006: left arm
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +86,91 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: head
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1224
+        width: 160
+        height: 227
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22999cf6e32f550419069f4305e850ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: right arm
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 981
+        width: 154
+        height: 174
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebcef1c6bfd4ae34fbe3035bca5a3f92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: body
+      rect:
+        serializedVersion: 2
+        x: 738.3113
+        y: 832.31104
+        width: 181
+        height: 325
+      alignment: 9
+      pivot: {x: 0.50104266, y: 0.50058144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b77c3606ee1f941a8d6a7b42422e4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: left arm
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 995
+        width: 114.52429
+        height: 159
+      alignment: 9
+      pivot: {x: 0.49334514, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd5308cd237e004c860700094f47cc6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e1a424aa2c1f7f649baae2f8143dc115
     vertices: []
     indices: 
     edges: []
@@ -94,6 +178,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
+  userData: 636841413000213505
   assetBundleName: 
   assetBundleVariant: 
