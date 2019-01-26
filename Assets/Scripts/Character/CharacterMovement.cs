@@ -34,6 +34,8 @@ public class CharacterMovement : MonoBehaviour {
         if(drivenPath.Count > 0) {
             DoNextDrivenMovement();
         }
+
+        EnabledInteraction = true;
     }
 
     public void DrivenMovement(List<Vector2> drivenPath) {

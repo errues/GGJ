@@ -2,13 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CombatRoom : MonoBehaviour {
+public class CombatRoom : Room {
     public Vector2 bounds = Vector2.one;
+    public Vector2 initialPoint;
 
     public AttackParameters[] attacks;
 
+    private SpriteRenderer spriteRenderer;
+
+    private Room assignedRoom;
+    private CanvasController canvasController;
+
     private float roomTime;
     private int attackIndex;
+
+    protected override void Awake() {
+        base.Awake();
+
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        canvasController = GameObject.FindGameObjectWithTag("Canvas").GetComponent<CanvasController>();
+    }
 
     private void Start() {
         // Calculamos el tiempo de la habitación, en función de sus ataques
@@ -44,12 +57,32 @@ public class CombatRoom : MonoBehaviour {
         foreach (AttackParameters ap in attacks) {
             ap.attack.gameObject.SetActive(false);
         }
+    }
 
-        Run();
+    public void AssignRoom(ExplorationRoom room) {
+        assignedRoom = room;
+        fadingSpeed = room.fadeSpeed;
+    }
+
+    public void Hide() {
+        alpha = 0;
+        spriteRenderer.color = new Color(1, 1, 1, 0);
+    }
+
+    protected override void Update() {
+        base.Update();
+
+        if (fadingIn || fadingOut) {
+            print(fadingIn);
+            spriteRenderer.color = new Color(1, 1, 1, alpha);
+        }
+
+        CheckFadings();
     }
 
     public void Run() {
         attackIndex = 0;
+        canvasController.StartTimeBar(this);
         if (attacks.Length > 0) {
             StartCoroutine(NextAttack());
         }
@@ -129,6 +162,7 @@ public class CombatRoom : MonoBehaviour {
 
     public void Finish() {
         // Hacer la transición al mapa normal y luego iluminar la habitación
+        // Devolver al personaje a su posición anterior
     }
 
     public float GetRoomTime() {
@@ -138,5 +172,8 @@ public class CombatRoom : MonoBehaviour {
     private void OnDrawGizmos() {
         Gizmos.color = Color.white;
         Gizmos.DrawWireCube(transform.position, bounds);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawSphere(initialPoint, 1);
     }
 }

@@ -2,47 +2,71 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Room : MonoBehaviour {
-    public SpriteRenderer lightRoomSprite;
+public abstract class Room : MonoBehaviour {
+    private Collider2D[] colliders;
 
-    public float fadingSpeed = 1;    
+    protected bool fadingIn;
+    protected bool fadingOut;
+    protected float alpha;
 
-    private bool enlighted;
-    private bool fading;
-    private float alpha;
+    protected float fadingSpeed;
 
-    private PassiveEnemy assignedEnemy;
-
-    private void Awake() {
-        enlighted = false;
-        fading = false;
-
-        alpha = 0;
-
-        lightRoomSprite.color = new Color(1, 1, 1, 0);
-    }
-
-    public void AssignEnemy(PassiveEnemy enemy) {
-        assignedEnemy = enemy;
-    }
-
-    private void Update() {
-        if (fading) {
-            alpha = Mathf.Clamp(alpha + fadingSpeed * Time.deltaTime, 0, 1);
-            lightRoomSprite.color = new Color(1, 1, 1, alpha);
-
-            if (alpha == 1) {
-                fading = false;
-            }
+    public bool IsFadingIn {
+        get {
+            return fadingIn;
         }
     }
 
-    public void Enlighten() {
-        enlighted = true;
-        fading = true;
+    public bool IsFadingOut {
+        get {
+            return fadingOut;
+        }
+    }
 
-        if (assignedEnemy != null) {
-            assignedEnemy.Complete();
+    protected virtual void Awake() {
+        colliders = GetComponentsInChildren<Collider2D>();
+
+        fadingIn = false;
+        fadingOut = false;
+        alpha = 1;
+    }
+
+    public void FadeIn() {
+        print(name);
+        fadingOut = false;
+        fadingIn = true;
+
+        foreach (Collider2D col in colliders) {
+            col.enabled = true;
+        }
+    }
+
+    public void FadeOut() {
+        fadingOut = true;
+        fadingIn = false;
+
+        foreach (Collider2D col in colliders) {
+            col.enabled = false;
+        }
+    }
+
+    protected virtual void Update() {
+        if (fadingIn) {
+            alpha = Mathf.Clamp(alpha + fadingSpeed * Time.deltaTime, 0, 1);
+        } else if (fadingOut) {
+            alpha = Mathf.Clamp(alpha - fadingSpeed * Time.deltaTime, 0, 1);
+        }
+    }
+
+    protected void CheckFadings() {
+        if (fadingIn) {
+            if (alpha == 1) {
+                fadingIn = false;
+            }
+        } else if (fadingOut) {
+            if (alpha == 0) {
+                fadingOut = false;
+            }
         }
     }
 }

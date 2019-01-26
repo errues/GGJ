@@ -6,10 +6,10 @@ public class CameraController : MonoBehaviour {
 
     [Header("Camera Adjust Options")]
     public AnimationCurve cameraZoomCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
-    public float cameraZoomSpeed = 1f;
 
     public AnimationCurve cameraMovementCurve = AnimationCurve.Linear(0f,0f,1f,1f);
-    public float cameraMovementSpeed = 1f;
+
+    private float transitionSpeed;
 
     private Camera mainCamera;
     private MapController mapController;
@@ -61,15 +61,31 @@ public class CameraController : MonoBehaviour {
         }
     }
 
-    public void FocusRoom(bool inmediate = false) {
+    public void FocusRoom(CombatRoom room, float fadingSpeed, bool inmediate = false) {
+        if (inmediate) {
+            transform.position = new Vector3(room.transform.position.x, room.transform.position.y, transform.position.z);
+            mainCamera.orthographicSize = CalculateCameraSize(room.bounds);
+        } else {
+            transitionSpeed = fadingSpeed;
+            cameraDestPosition = new Vector3(room.transform.position.x, room.transform.position.y, transform.position.z);
+            if (movementCoroutine != null) {
+                StopCoroutine(movementCoroutine);
+            }
+            movementCoroutine = StartCoroutine(MoveCamera());
 
+            cameraDestSize = CalculateCameraSize(room.bounds);
+            if (zoomCoroutine != null) {
+                StopCoroutine(zoomCoroutine);
+            }
+            zoomCoroutine = StartCoroutine(ZoomCamera());
+        }
     }
 
     private IEnumerator MoveCamera() {
         cameraInitialPosition = transform.position;
         lerpMovementStep = 0f;
         while (lerpMovementStep <= 1f) {
-            lerpMovementStep += Time.deltaTime * cameraMovementSpeed;
+            lerpMovementStep += Time.deltaTime * transitionSpeed;
             transform.position = Vector3.Lerp(cameraInitialPosition, cameraDestPosition, cameraMovementCurve.Evaluate(lerpMovementStep));
             yield return null;
         }
@@ -80,7 +96,7 @@ public class CameraController : MonoBehaviour {
         cameraInitialSize = mainCamera.orthographicSize;
         lerpZoomStep = 0f;
         while (lerpZoomStep <= 1f) {
-            lerpZoomStep += Time.deltaTime * cameraZoomSpeed;
+            lerpZoomStep += Time.deltaTime * transitionSpeed;
             mainCamera.orthographicSize = Mathf.Lerp(cameraInitialSize, cameraDestSize, cameraZoomCurve.Evaluate(lerpZoomStep));
             yield return null;
         }
