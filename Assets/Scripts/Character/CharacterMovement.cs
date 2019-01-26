@@ -6,6 +6,7 @@ public class CharacterMovement : MonoBehaviour {
 
     public float speed = 6;
 
+    private bool drivenMovemen = false;
     private Rigidbody2D r2D;
 
     private void Awake() {
@@ -13,18 +14,20 @@ public class CharacterMovement : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        // Comprobamos si estamos intentando desplazarnos
-        float horizontalMovement = Input.GetAxisRaw("Horizontal");
-        if (horizontalMovement != 0) {
-            transform.Translate(Vector3.right * speed * Time.fixedDeltaTime * horizontalMovement);
-        }
+        if (!drivenMovemen) {
+            // Comprobamos si estamos intentando desplazarnos
+            float horizontalMovement = Input.GetAxisRaw("Horizontal");
+            if (horizontalMovement != 0) {
+                transform.Translate(Vector3.right * speed * Time.fixedDeltaTime * horizontalMovement);
+            }
 
-        float verticalMovement = Input.GetAxisRaw("Vertical");
-        if (verticalMovement != 0) {
-            transform.Translate(Vector3.up * speed * Time.fixedDeltaTime * verticalMovement);
-        }
+            float verticalMovement = Input.GetAxisRaw("Vertical");
+            if (verticalMovement != 0) {
+                transform.Translate(Vector3.up * speed * Time.fixedDeltaTime * verticalMovement);
+            }
 
-        r2D.MovePosition(transform.position);
+            r2D.MovePosition(transform.position);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {

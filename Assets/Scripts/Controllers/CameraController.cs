@@ -32,23 +32,28 @@ public class CameraController : MonoBehaviour {
         lastAspectRatio = 0f;
     }
 
-    public float CalculateMapCameraSize() {
-        return Mathf.Max(mapController.bounds.y, mapController.bounds.x / mainCamera.aspect) / 2f;
+    private void Start() {
+        //Comienzo del GamePlay con vista general del mapa
+        FocusMap(true);
+    }
+
+    public float CalculateCameraSize(Vector2 bounds) {
+        return Mathf.Max(bounds.y, bounds.x / mainCamera.aspect) / 2f;
     }
 
     public void FocusMap(bool inmediate = false) {
         if (inmediate) {
-            transform.position = mapController.transform.position;
-            mainCamera.orthographicSize = CalculateMapCameraSize();
+            transform.position = new Vector3(mapController.transform.position.x, mapController.transform.position.y, transform.position.z);
+            mainCamera.orthographicSize = CalculateCameraSize(mapController.bounds);
         }
         else {
-            cameraDestPosition = mapController.transform.position;
+            cameraDestPosition = new Vector3(mapController.transform.position.x, mapController.transform.position.y, transform.position.z);
             if (movementCoroutine != null) {
                 StopCoroutine(movementCoroutine);
             }
             movementCoroutine = StartCoroutine(MoveCamera());
 
-            cameraDestSize = CalculateMapCameraSize();
+            cameraDestSize = CalculateCameraSize(mapController.bounds);
             if (zoomCoroutine != null) {
                 StopCoroutine(zoomCoroutine);
             }
@@ -56,7 +61,7 @@ public class CameraController : MonoBehaviour {
         }
     }
 
-    public void FocusRoom() {
+    public void FocusRoom(bool inmediate = false) {
 
     }
 
