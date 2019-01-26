@@ -92,5 +92,9 @@ public class CharacterMovement : MonoBehaviour {
         if (LayerMask.LayerToName(collision.collider.gameObject.layer) == "Wall") {
             // reproducir sonido
         }
+
+        if (LayerMask.LayerToName(collision.collider.gameObject.layer) == "Door") {
+            collision.collider.GetComponentInChildren<Door>().PlayClosedDoorHit();
+        }
     }
 }

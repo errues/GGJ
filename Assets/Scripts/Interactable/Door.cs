@@ -12,13 +12,17 @@ public class Door : MonoBehaviour, Interactable {
     [Header("Door Sounds")]
     public AudioClip openDoor;
     public AudioClip closeDoor;
+    public AudioClip closedDoorHit;
+
+    [Header("Door Initialization")]
+    public bool closedDoor = false;
 
     private AudioSource audioSource;
     private SpriteRenderer spriteRenderer;
 
     public bool EnabledInteraction {
         get {
-            return doorInteractionTrigger.enabled;
+            return closedDoor ? doorInteractionTrigger.enabled : closedDoor;
         }
 
         set {
@@ -44,5 +48,9 @@ public class Door : MonoBehaviour, Interactable {
         spriteRenderer.enabled = true;
         doorCollider.enabled = true;
         audioSource.PlayOneShot(closeDoor);
+    }
+
+    public void PlayClosedDoorHit() {
+        audioSource.PlayOneShot(closedDoorHit);
     }
 }
