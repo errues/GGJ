@@ -1,7 +1,18 @@
 fileFormatVersion: 2
 guid: ec480c6fc147a7a4ab0a2cd38e6a6901
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: PadreBueno_0
+    21300002: PadreBueno_1
+    21300004: PadreBueno_2
+    21300006: PadreBueno_3
+    21300008: PadreBueno_4
+    21300010: PadreBueno_5
+    21300012: PadreBueno_6
+    21300014: PadreBueno_7
+    21300016: PadreBueno_8
+    21300018: PadreBueno_9
+    21300020: PadreBueno_10
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +93,231 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PadreBueno_0
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1599
+        width: 197
+        height: 238
+      alignment: 9
+      pivot: {x: 0.46700507, y: 0.50840336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3222477d8cef44ca325dae15de4300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreBueno_1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1700
+        width: 37
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a5f1339efedf1498fa238168937abc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreBueno_2
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1512
+        width: 199
+        height: 405
+      alignment: 9
+      pivot: {x: 0.49748743, y: 0.5012346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9207b777071a7aa49a4a07afc0ba8e62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreBueno_3
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 1443
+        width: 25
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168ca4e02348f554581626b6adf1116d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreBueno_4
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 1446
+        width: 18
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4509f9ac158aa14a9c7f3bdfc91724d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreBueno_5
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 1437
+        width: 15
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8028086be5d40449f3dbabf365ecd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreBueno_6
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1439
+        width: 21
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435b8927c1d40db4496bf5986df73e4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreBueno_7
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1003
+        width: 152
+        height: 202
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc0de108a854d448ab14d6aa537f1a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreBueno_8
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 897
+        width: 419
+        height: 552
+      alignment: 9
+      pivot: {x: 0.48210025, y: 0.5009058}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14fa5f9de648720468d324fd3b54d4c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreBueno_9
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 378
+        width: 198
+        height: 406
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50246304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692bfb47692b9964a947a59d73f9238a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreBueno_10
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 208
+        width: 149
+        height: 182
+      alignment: 9
+      pivot: {x: 0.4966443, y: 0.48076925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5116f2b819abcfe478881574ff5d876e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 360f01296ff8038498246567d01ef05f
     vertices: []
     indices: 
     edges: []
@@ -94,6 +325,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
+  userData: 636841336111406628
   assetBundleName: 
   assetBundleVariant: 
