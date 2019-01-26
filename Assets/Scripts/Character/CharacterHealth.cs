@@ -8,8 +8,8 @@ public class CharacterHealth : MonoBehaviour {
     private Rect rectReadPicture;
 
     private void Awake() {
-        tex = new Texture2D(128, 128);
-        rectReadPicture = new Rect(0, 0, 128, 128);
+        tex = new Texture2D(attackTargetTexture.width, attackTargetTexture.height);
+        rectReadPicture = new Rect(0, 0, attackTargetTexture.width, attackTargetTexture.height);
     }
 
     private void Update() {
@@ -27,9 +27,9 @@ public class CharacterHealth : MonoBehaviour {
     }
 
     private bool AttackDetected() {
-        for (int x = 1; x <= 128; x += 32) {
-            for (int y = 1; y <= 128; y += 32) {
-                if (tex.GetPixel(x - 1, y - 1).a != 0) {
+        for (int x = 0; x < attackTargetTexture.width; ++x) {
+            for (int y = 0; y < attackTargetTexture.height; ++y) {
+                if (tex.GetPixel(x, y).a != 0) {
                     return true;
                 }
             }
