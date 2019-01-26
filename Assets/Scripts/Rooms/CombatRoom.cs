@@ -10,11 +10,14 @@ public class CombatRoom : Room {
 
     private SpriteRenderer spriteRenderer;
 
-    private Room assignedRoom;
+    private ExplorationRoom assignedRoom;
     private CanvasController canvasController;
 
     private float roomTime;
     private int attackIndex;
+
+    private Coroutine waitingToFinish;
+    private Coroutine nextAttack;
 
     protected override void Awake() {
         base.Awake();
@@ -83,8 +86,10 @@ public class CombatRoom : Room {
         attackIndex = 0;
         canvasController.StartTimeBar(this);
         if (attacks.Length > 0) {
-            StartCoroutine(NextAttack());
+            nextAttack = StartCoroutine(NextAttack());
         }
+
+        waitingToFinish = StartCoroutine(WaitAndFinish(roomTime));
     }
 
     private IEnumerator NextAttack() {
@@ -134,7 +139,7 @@ public class CombatRoom : Room {
         // Pasamos al siguiente
         ++attackIndex;
         if (attackIndex < attacks.Length) {
-            StartCoroutine(NextAttack());
+            nextAttack = StartCoroutine(NextAttack());
         } else {
             // termina la habitación
         }
@@ -159,9 +164,16 @@ public class CombatRoom : Room {
         attacks[index].attack.gameObject.SetActive(false);
     }
 
-    public void Finish() {
-        // Hacer la transición al mapa normal y luego iluminar la habitación
-        // Devolver al personaje a su posición anterior
+    private IEnumerator WaitAndFinish(float time) {
+        yield return new WaitForSeconds(time);
+        
+        assignedRoom.FinishRoom();
+    }
+
+    public void CharacterDied() {
+        if (waitingToFinish != null) {
+            StopCoroutine(waitingToFinish);
+        }
     }
 
     public float GetRoomTime() {
@@ -174,5 +186,15 @@ public class CombatRoom : Room {
 
         Gizmos.color = Color.green;
         Gizmos.DrawSphere(initialPoint, 1);
+    }
+
+    public void StopAllAttacks() {
+        if (nextAttack != null) {
+            StopCoroutine(nextAttack);
+        }
+
+        foreach (AttackParameters ap in attacks) {
+            ap.attack.gameObject.SetActive(false);
+        }
     }
 }

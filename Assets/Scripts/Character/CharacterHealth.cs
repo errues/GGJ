@@ -4,26 +4,46 @@ using UnityEngine;
 
 public class CharacterHealth : MonoBehaviour {
     public RenderTexture attackTargetTexture;
+
     private Texture2D tex;
     private Rect rectReadPicture;
+
+    private ExplorationRoom currentRoom;
+
+    private bool alive;
+
+    public bool IsAlive {
+        get {
+            return alive;
+        }
+    }
 
     private void Awake() {
         tex = new Texture2D(attackTargetTexture.width, attackTargetTexture.height);
         rectReadPicture = new Rect(0, 0, attackTargetTexture.width, attackTargetTexture.height);
+
+        alive = true;
+    }
+
+    public void AssignRoom(ExplorationRoom room) {
+        currentRoom = room;
     }
 
     private void Update() {
-        RenderTexture.active = attackTargetTexture;
+        if (alive) {
+            RenderTexture.active = attackTargetTexture;
 
-        tex.ReadPixels(rectReadPicture, 0, 0);
-        tex.Apply();
+            tex.ReadPixels(rectReadPicture, 0, 0);
+            tex.Apply();
 
-        if (AttackDetected()) {
-            //Die
-            print("MUERRRRRRRTO");
+            if (AttackDetected()) {
+                //Die
+                currentRoom.CharacterDied();
+                SetAlive(false);
+            }
+
+            RenderTexture.active = null;
         }
-
-        RenderTexture.active = null;
     }
 
     private bool AttackDetected() {
@@ -35,5 +55,9 @@ public class CharacterHealth : MonoBehaviour {
             }
         }
         return false;
+    }
+
+    public void SetAlive(bool alive) {
+        this.alive = alive;
     }
 }

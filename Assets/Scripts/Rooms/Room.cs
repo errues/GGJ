@@ -34,19 +34,11 @@ public abstract class Room : MonoBehaviour {
     public void FadeIn() {
         fadingOut = false;
         fadingIn = true;
-
-        foreach (Collider2D col in colliders) {
-            col.enabled = true;
-        }
     }
 
     public void FadeOut() {
         fadingOut = true;
         fadingIn = false;
-
-        foreach (Collider2D col in colliders) {
-            col.enabled = false;
-        }
     }
 
     protected virtual void Update() {
@@ -66,6 +58,18 @@ public abstract class Room : MonoBehaviour {
             if (alpha == 0) {
                 fadingOut = false;
             }
+        }
+    }
+
+    public void ActivateColliders() {
+        foreach (Collider2D col in colliders) {
+            col.enabled = true;
+        }
+    }
+
+    public void DeactivateColliders() {
+        foreach (Collider2D col in colliders) {
+            col.enabled = false;
         }
     }
 }

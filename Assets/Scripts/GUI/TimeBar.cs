@@ -47,7 +47,12 @@ public class TimeBar : MonoBehaviour {
 
     private void Finish() {
         running = false;
-        currentRoom.Finish();
+        bar.sizeDelta = new Vector2(originalWidth, bar.sizeDelta.y);
+        barParent.SetActive(false);
+    }
+
+    public void Terminate() {
+        running = false;
         bar.sizeDelta = new Vector2(originalWidth, bar.sizeDelta.y);
         barParent.SetActive(false);
     }

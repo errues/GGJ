@@ -6,12 +6,12 @@ public class MapController : MonoBehaviour {
     [Header("Home")]
     public Vector2 respawnPoint = Vector2.zero;
 
-    [Header("Rooms")]
-    public List<ExplorationRoom> explorationRooms;
-    public List<CombatRoom> combatRooms;
-
     [Header("Map Size")]
     public Vector2 bounds = Vector2.one;
+    
+    private ExplorationRoom[] explorationRooms;
+    private CombatRoom[] combatRooms;
+    private PassiveEnemy[] passiveEnemies;
 
     private List<Door> doors;
 
@@ -21,6 +21,10 @@ public class MapController : MonoBehaviour {
         foreach (Door door in GetComponentsInChildren<Door>()) {
             doors.Add(door);
         }
+
+        explorationRooms = GetComponentsInChildren<ExplorationRoom>();
+        combatRooms = GetComponentsInChildren<CombatRoom>();
+        passiveEnemies = GetComponentsInChildren<PassiveEnemy>();
     }
 
     private void Start() {
@@ -46,11 +50,17 @@ public class MapController : MonoBehaviour {
         foreach(Room r in explorationRooms) {
             r.FadeIn();
         }
+        foreach (PassiveEnemy pe in passiveEnemies) {
+            pe.FadeIn();
+        }
     }
 
     public void FadeOutMap() {
         foreach (Room r in explorationRooms) {
             r.FadeOut();
+        }
+        foreach (PassiveEnemy pe in passiveEnemies) {
+            pe.FadeOut();
         }
     }
 

@@ -10,6 +10,8 @@ public class PassiveEnemy : MonoBehaviour {
     private SpriteRenderer[] lightSpriteRenderers;
     private SpriteRenderer[] darkSpriteRenderers;
 
+    private Collider2D[] colliders;
+
     private ExplorationRoom assignedRoom;
 
     private bool completed;
@@ -31,6 +33,8 @@ public class PassiveEnemy : MonoBehaviour {
         fadingIn = false;
         fadingOut = false;
         alpha = 0;
+
+        colliders = GetComponentsInChildren<Collider2D>();
     }
 
     public void AssignRoom(ExplorationRoom room) {
@@ -58,6 +62,9 @@ public class PassiveEnemy : MonoBehaviour {
 
             if (alpha == 1) {
                 fadingIn = false;
+                foreach (Collider2D c2d in colliders) {
+                    c2d.enabled = true;
+                }
             }
         } else if (fadingOut) {
             alpha = Mathf.Clamp(alpha - fadingSpeed * Time.deltaTime, 0, 1);
@@ -86,6 +93,10 @@ public class PassiveEnemy : MonoBehaviour {
     public void FadeOut() {
         fadingOut = true;
         fadingIn = false;
+
+        foreach (Collider2D c2d in colliders) {
+            c2d.enabled = false;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
