@@ -342,8 +342,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc6f8ba7b0854c9428a4783fda512ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightRoomSprite: {fileID: 8043410535278985733}
-  darkRoomSprite: {fileID: 8043410535904792934}
+  lightSpriteTransform: {fileID: 8043410535278985732}
+  darkSpriteTransform: {fileID: 8043410535904792929}
   fadeSpeed: 1
   assignedEnemy: {fileID: 0}
   assignedCombatRoom: {fileID: 0}

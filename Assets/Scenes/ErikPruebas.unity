@@ -953,11 +953,6 @@ PrefabInstance:
       propertyPath: assignedCombatRoom
       value: 
       objectReference: {fileID: 1536448338}
-    - target: {fileID: 280081491672662078, guid: 2e5878e25d64fbe47b6dcd4f0c8a295f,
-        type: 3}
-      propertyPath: fadeSpeed
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e5878e25d64fbe47b6dcd4f0c8a295f, type: 3}
 --- !u!1001 &8959805258612607241

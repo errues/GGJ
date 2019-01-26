@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ExplorationRoom : Room {
-    public SpriteRenderer lightRoomSprite;
-    public SpriteRenderer darkRoomSprite;
+    public Transform lightSpriteTransform;
+    public Transform darkSpriteTransform;
     public float fadeSpeed = 1;
 
     public PassiveEnemy assignedEnemy;
@@ -15,6 +15,9 @@ public class ExplorationRoom : Room {
     private MapController mapController;
     private CameraController cameraController;
     private CanvasController canvasController;
+
+    private SpriteRenderer[] lightSpriteRenderers;
+    private SpriteRenderer[] darkSpriteRenderers;
 
     private bool enlighted;
 
@@ -33,7 +36,12 @@ public class ExplorationRoom : Room {
         cameraController = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>();
         canvasController = GameObject.FindGameObjectWithTag("Canvas").GetComponent<CanvasController>();
 
-        lightRoomSprite.color = new Color(1, 1, 1, 0);
+        lightSpriteRenderers = lightSpriteTransform.GetComponentsInChildren<SpriteRenderer>();
+        darkSpriteRenderers = darkSpriteTransform.GetComponentsInChildren<SpriteRenderer>();
+
+        foreach (SpriteRenderer sr in lightSpriteRenderers) {
+            sr.color = new Color(1, 1, 1, 0);
+        }
     }
 
     private void Start() {
@@ -171,9 +179,13 @@ public class ExplorationRoom : Room {
 
         if (fadingIn || fadingOut) {
             if (enlighted) {
-                lightRoomSprite.color = new Color(1, 1, 1, alpha);
+                foreach (SpriteRenderer sr in lightSpriteRenderers) {
+                    sr.color = new Color(1, 1, 1, alpha);
+                }
             } else {
-                darkRoomSprite.color = new Color(1, 1, 1, alpha);
+                foreach (SpriteRenderer sr in darkSpriteRenderers) {
+                    sr.color = new Color(1, 1, 1, alpha);
+                }
             }
         }
 
