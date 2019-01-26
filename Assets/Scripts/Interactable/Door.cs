@@ -2,30 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource), typeof(Collider2D))]
+[RequireComponent(typeof(AudioSource))]
 public class Door : MonoBehaviour, Interactable {
 
+    [Header("Door Colliders")]
+    public Collider2D doorCollider;
+    public Collider2D doorInteractionTrigger;
+
+    [Header("Door Sounds")]
     public AudioClip openDoor;
     public AudioClip closeDoor;
 
     private AudioSource audioSource;
     private SpriteRenderer spriteRenderer;
-    private Collider2D doorCollider;
 
     public bool EnabledInteraction {
         get {
-            return doorCollider.enabled;
+            return doorInteractionTrigger.enabled;
         }
 
         set {
-            doorCollider.enabled = value;
+            doorInteractionTrigger.enabled = value;
         }
     }
 
     private void Awake() {
         audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        doorCollider = GetComponent<Collider2D>();
     }
 
     public void Interact() { }
