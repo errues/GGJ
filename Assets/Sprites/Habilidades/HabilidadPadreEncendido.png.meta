@@ -1,7 +1,8 @@
 fileFormatVersion: 2
 guid: b864c3a01ac877b4597bded59ab63e0c
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: HabilidadPadreEncendido_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +83,31 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: HabilidadPadreEncendido_0
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 429
+        width: 1028
+        height: 1619
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5003089}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ee8b2dc1cbbc74f8f808770f6a1d23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 86d8bcdb27d63754088783783ed1d912
     vertices: []
     indices: 
     edges: []
@@ -94,6 +115,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
+  userData: 636840844986465864
   assetBundleName: 
   assetBundleVariant: 

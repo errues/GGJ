@@ -1,7 +1,8 @@
 fileFormatVersion: 2
 guid: ba0be8040e524d841aa200417917b6cb
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: HabilidadPadreApagado_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +83,31 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: HabilidadPadreApagado_0
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 45
+        width: 1029
+        height: 2003
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5012481}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dba5ac6612f08948aea74bec900c103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 79d3977352462fd4bbcb6491d6241b99
     vertices: []
     indices: 
     edges: []
@@ -94,6 +115,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
+  userData: 636840845905618866
   assetBundleName: 
   assetBundleVariant: 
