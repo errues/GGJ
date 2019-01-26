@@ -7,10 +7,13 @@ public class Room : MonoBehaviour {
 
     public float fadingSpeed = 1;
 
+    public float roomTime;
+
     private bool enlighted;
     private bool fading;
-
     private float alpha;
+
+    private PassiveEnemy assignedEnemy;
 
     private void Awake() {
         enlighted = false;
@@ -19,6 +22,10 @@ public class Room : MonoBehaviour {
         alpha = 0;
 
         lightRoomSprite.color = new Color(1, 1, 1, 0);
+    }
+
+    public void AssignEnemy(PassiveEnemy enemy) {
+        assignedEnemy = enemy;
     }
 
     private void Update() {
@@ -32,8 +39,12 @@ public class Room : MonoBehaviour {
         }
     }
 
-    private void Enlighten() {
+    public void Enlighten() {
         enlighted = true;
         fading = true;
+
+        if (assignedEnemy != null) {
+            assignedEnemy.Complete();
+        }
     }
 }
