@@ -83,11 +83,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7832541083995793119}
   - component: {fileID: 3663840388946894474}
-  - component: {fileID: 7832541083995793118}
-  - component: {fileID: 7832541083995793116}
   - component: {fileID: 7832541083995793106}
   - component: {fileID: 7832541083995793107}
   - component: {fileID: 5048334734958107605}
+  - component: {fileID: 7832541083995793118}
+  - component: {fileID: 7832541083995793116}
+  - component: {fileID: 6091124927336134682}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -158,32 +159,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7832541083995793118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7832541083995793105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a81ab212c7762554a86dcad99366d2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackTargetTexture: {fileID: 8400000, guid: eef907c4b17ebfa4ab07535e54eb3238, type: 2}
---- !u!114 &7832541083995793116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7832541083995793105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86284843d6bba844c9bbe010c98fb9aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 6
 --- !u!50 &7832541083995793106
 Rigidbody2D:
   serializedVersion: 4
@@ -327,3 +302,41 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7832541083995793118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7832541083995793105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a81ab212c7762554a86dcad99366d2bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackTargetTexture: {fileID: 8400000, guid: eef907c4b17ebfa4ab07535e54eb3238, type: 2}
+--- !u!114 &7832541083995793116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7832541083995793105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86284843d6bba844c9bbe010c98fb9aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
+--- !u!114 &6091124927336134682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7832541083995793105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace8186a179b7e641ac502ac7e7c7df5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
