@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: da10e4b310d82624fa02de180722d6cf
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: ProtaMalo_0
+    21300002: ProtaMalo_1
+    21300004: ProtaMalo_2
+    21300006: ProtaMalo_3
+    21300008: ProtaMalo_4
+    21300010: ProtaMalo_5
+    21300012: ProtaMalo_6
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +89,151 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ProtaMalo_0
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1451
+        width: 200
+        height: 252
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b08fbaa8184cdd4aa84d688b278bef2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtaMalo_1
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1378
+        width: 137
+        height: 159
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7e72587a0efbd42a958e23d9de5d93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtaMalo_2
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 1127
+        width: 74
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49499997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24bc49f9af8a7541aee704ea6cc0aec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtaMalo_3
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 943
+        width: 74
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49499997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049ce9705eeaa64498c3662e295fd026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtaMalo_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 661
+        width: 137
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd51506a17892040a84c508a6f9b234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtaMalo_5
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 686
+        width: 81
+        height: 93
+      alignment: 9
+      pivot: {x: 0.49382716, y: 0.49462366}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5abf6510b042d848abd26755db57dbf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtaMalo_6
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 651
+        width: 81
+        height: 93
+      alignment: 9
+      pivot: {x: 0.50617284, y: 0.48924732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80208116ddf3774588b8b079355bee5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e7649a1acb526a041891143b4504ef0a
     vertices: []
     indices: 
     edges: []
@@ -94,6 +241,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
+  userData: 636841234449409178
   assetBundleName: 
   assetBundleVariant: 
