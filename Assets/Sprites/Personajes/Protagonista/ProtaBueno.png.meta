@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 49b155a256caedb4cb1659c0b7b5c118
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: ProtaBueno_0
+    21300002: ProtaBueno_1
+    21300004: ProtaBueno_2
+    21300006: ProtaBueno_3
+    21300008: ProtaBueno_4
+    21300010: ProtaBueno_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +88,131 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ProtaBueno_0
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1618
+        width: 213
+        height: 214
+      alignment: 9
+      pivot: {x: 0.42464337, y: 0.099277385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9120145a80b85d44faa7b969d71cedc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtaBueno_1
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1577
+        width: 130
+        height: 164
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b183fdc3079abd34281762bb6e3a4024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtaBueno_2
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1164
+        width: 74
+        height: 98
+      alignment: 9
+      pivot: {x: 0.75745004, y: 0.83436924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a8ea99a7aa28f4f8c2c394189b8265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtaBueno_3
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1021
+        width: 74
+        height: 98
+      alignment: 9
+      pivot: {x: 0.28512326, y: 0.83995706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1612fd09e0f3f6e47b16f853cd2c939a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtaBueno_4
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 539
+        width: 79
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5055828, y: 0.8600519}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e3ac8ef749ee8468ba6e8706fdc538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtaBueno_5
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 542
+        width: 61
+        height: 93
+      alignment: 9
+      pivot: {x: 0.4625404, y: 0.83240795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d711ab73b7fd5cf43af8d82cf5fc9b18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 28e7966bf868f304c8d3c801892b0f9f
     vertices: []
     indices: 
     edges: []
