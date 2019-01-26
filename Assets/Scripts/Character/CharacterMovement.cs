@@ -62,6 +62,7 @@ public class CharacterMovement : MonoBehaviour {
 
     public void GoToSavedLocation() {
         drivenPath = new List<Vector2>();
+        drivenPath.Add(savedLocation);
         DoNextDrivenMovement();
     }
 
