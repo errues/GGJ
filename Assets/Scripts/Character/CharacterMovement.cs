@@ -9,7 +9,8 @@ public class CharacterMovement : MonoBehaviour {
     public float drivenMovementSpeed = 10;
 
     [Header("Character Driven Path")]
-    public List<Vector2> drivenPath = new List<Vector2>();
+    [SerializeField]
+    private List<Vector2> drivenPath = new List<Vector2>();
 
     private bool drivenMovemen = false;
     private Rigidbody2D r2D;
@@ -22,6 +23,11 @@ public class CharacterMovement : MonoBehaviour {
     private Vector3 savedLocation;
 
     public bool EnabledInteraction { get; set; }
+    public bool IsInDrivenMovement {
+        get {
+            return drivenMovemen;
+        }
+    }
 
     private void Awake() {
         r2D = GetComponent<Rigidbody2D>();
