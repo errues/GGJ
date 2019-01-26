@@ -175,10 +175,10 @@ TextureImporter:
         serializedVersion: 2
         x: 259
         y: 545
-        width: 63
-        height: 71
+        width: 75
+        height: 104
       alignment: 9
-      pivot: {x: 0.54114884, y: 0.73733306}
+      pivot: {x: 0.4525472, y: 0.7692807}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: ProtaBueno_5
       rect:
         serializedVersion: 2
-        x: 1534
-        y: 548
-        width: 44
-        height: 68
+        x: 1527
+        y: 547
+        width: 55
+        height: 87
       alignment: 9
-      pivot: {x: 0.44335383, y: 0.80370194}
+      pivot: {x: 0.45845392, y: 0.8323441}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
