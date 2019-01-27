@@ -15,6 +15,7 @@ public class OSTController : MonoBehaviour {
 
     private bool inFight;
     private bool blockAudio;
+    private bool playHappy;
     private float themeTime;
     private AudioSource audioSource;
 
@@ -28,10 +29,12 @@ public class OSTController : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
         inFight = false;
         blockAudio = false;
+        playHappy = true;
     }
 
     public void PlayLightTheme(bool noTime = false) {
-        if(!inFight && !blockAudio) {
+        playHappy = true;
+        if (!inFight && !blockAudio) {
             audioSource.loop = true;
             if (noTime) {
                 audioSource.time = 0f;
@@ -48,6 +51,7 @@ public class OSTController : MonoBehaviour {
     }
 
     public void PlayDarkTheme(bool noTime = false) {
+        playHappy = false;
         if (!inFight && !blockAudio) {
             audioSource.loop = true;
             if (noTime) {
@@ -65,6 +69,7 @@ public class OSTController : MonoBehaviour {
     }
 
     public void PlayFightTheme(AudioClip fightTheme) {
+        StopAllCoroutines();
         audioSource.loop = true;
         inFight = true;
         audioSource.time = 0f;
@@ -94,9 +99,17 @@ public class OSTController : MonoBehaviour {
 
     private IEnumerator FinishFightTheme() {
         blockAudio = true;
-        yield return new WaitForSeconds(waitForVictoryLose);
+        playHappy = true;
+
+        yield return new WaitForSeconds(6f);
+
         blockAudio = false;
-        PlayLightTheme(true);
+        if (playHappy) {
+            PlayLightTheme(true);
+        }
+        else {
+            PlayDarkTheme(true);
+        }
         audioSource.time = themeTime;
     }
 }
