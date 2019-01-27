@@ -41,7 +41,7 @@ public class MapController : MonoBehaviour {
     }
 
     public void RefreshEnemyArray() {
-        passiveEnemies = GetComponentsInChildren<PassiveEnemy>();
+        passiveEnemies = GetComponentsInChildren<PassiveEnemy>(true);
     }
 
     public void DissableDoors() {
