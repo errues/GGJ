@@ -38,6 +38,11 @@ public class BrotherFight : CombatRoom {
         motherErased = !motherRoom.Enlighted;
         fatherErased = !fatherRoom.Enlighted;
         dogErased = !dogRoom.Enlighted;
+
+        grandmotherSafePoint.SetActive(false);
+        motherSafePoint.SetActive(false);
+        fatherSafePoint.SetActive(false);
+        dogSafePoint.SetActive(false);
     }
 
     protected override IEnumerator WaitAndFinish(float time) {
@@ -109,7 +114,6 @@ public class BrotherFight : CombatRoom {
             } else if (selected == dogSafePoint) {
                 dogErased = true;
             }
-
         }
     }
 
