@@ -60,9 +60,23 @@ public class CharacterMovement : MonoBehaviour {
             normalizedDrivenMovementSpeed = drivenMovementSpeed / Vector3.Distance(initialMovementPosition, destMovementPosition);
             lerpMovementStep = 0f;
             drivenPath.RemoveAt(0);
+
+            //Coloca el personaje mirando hacia la dirección de movimiento
+            if (destMovementPosition.x - initialMovementPosition.x > 0 && !isFacingRight) {
+                isFacingRight = !isFacingRight;
+                characterSprites.rotation = Quaternion.Euler(characterSprites.rotation.eulerAngles.x, 0f, characterSprites.rotation.eulerAngles.z);
+            }
+            else if (destMovementPosition.x - initialMovementPosition.x < 0 && isFacingRight) {
+                isFacingRight = !isFacingRight;
+                characterSprites.rotation = Quaternion.Euler(characterSprites.rotation.eulerAngles.x, 180f, characterSprites.rotation.eulerAngles.z);
+            }
+
         } else {
             drivenMovemen = false;
         }
+
+        //Establece la animación de anadar
+        characterAnimator.SetBool("walk", drivenMovemen);
     }
 
     public void SaveCurrentLocation() {
