@@ -26,7 +26,7 @@ public class CharacterRoomDetector : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D collision) {
         ExplorationRoom room = collision.gameObject.GetComponent<ExplorationRoom>();
-        if (room != enteredRoom) {
+        if (room != null && room != enteredRoom) {
             if(room.Enlighted) {
                 ostController.PlayLightTheme();
             } else {
