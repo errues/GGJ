@@ -11,6 +11,7 @@ public class OSTController : MonoBehaviour {
     public AudioClip loseClip;
 
     private bool inFight;
+    private bool blockAudio;
     private float themeTime;
     private AudioSource audioSource;
 
@@ -23,11 +24,12 @@ public class OSTController : MonoBehaviour {
     private void Awake() {
         audioSource = GetComponent<AudioSource>();
         inFight = false;
+        blockAudio = false;
     }
 
     public void PlayLightTheme(bool noTime = false) {
-        audioSource.loop = true;
-        if(!inFight) {
+        if(!inFight && !blockAudio) {
+            audioSource.loop = true;
             if (noTime) {
                 audioSource.time = 0f;
                 audioSource.clip = lightTheme;
@@ -43,8 +45,8 @@ public class OSTController : MonoBehaviour {
     }
 
     public void PlayDarkTheme(bool noTime = false) {
-        audioSource.loop = true;
-        if (!inFight) {
+        if (!inFight && !blockAudio) {
+            audioSource.loop = true;
             if (noTime) {
                 audioSource.time = 0f;
                 audioSource.clip = darkTheme;
@@ -88,8 +90,9 @@ public class OSTController : MonoBehaviour {
     }
 
     private IEnumerator FinishFightTheme() {
-        yield return new WaitForSeconds(5f);
-
+        blockAudio = true;
+        yield return new WaitForSeconds(6f);
+        blockAudio = false;
         PlayLightTheme(true);
         audioSource.time = themeTime;
     }
