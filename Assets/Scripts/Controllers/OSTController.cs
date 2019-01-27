@@ -7,6 +7,9 @@ public class OSTController : MonoBehaviour {
     public AudioClip lightTheme;
     public AudioClip darkTheme;
 
+    public AudioClip victoryClip;
+    public AudioClip deadClip;
+
     private bool inFight;
     private float themeTime;
     private AudioSource audioSource;
