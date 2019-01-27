@@ -103,7 +103,7 @@ public class ExplorationRoom : Room {
             assignedCombatRoom.FadeOut();
             assignedEnemy.FadeIn();
             cameraController.FocusMap(fadingSpeed);
-            ostController.FinishFightTheme();
+            ostController.FinishVictoryFightTheme();
 
             StartCoroutine(WaitAndContinueGame());
         }
@@ -125,7 +125,7 @@ public class ExplorationRoom : Room {
         canvasController.PauseBar();
 
         // Reproducimos sonido de muerte
-        ostController.PlayDeathTheme();
+        ostController.FinishLoseFightTheme();
 
         // Lanzamos la animación de muerte
         StartCoroutine(CharacterDeath());

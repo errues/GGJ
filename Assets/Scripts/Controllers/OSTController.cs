@@ -8,7 +8,7 @@ public class OSTController : MonoBehaviour {
     public AudioClip darkTheme;
 
     public AudioClip victoryClip;
-    public AudioClip deadClip;
+    public AudioClip loseClip;
 
     private bool inFight;
     private float themeTime;
@@ -61,17 +61,26 @@ public class OSTController : MonoBehaviour {
         audioSource.Play();
     }
 
-    public void FinishFightTheme() {
+    public void FinishVictoryFightTheme() {
         inFight = false;
-        PlayLightTheme(true);
-        audioSource.time = themeTime;
+        audioSource.clip = victoryClip;
+        audioSource.Play();
+
+        StartCoroutine(FinishFightTheme());
     }
 
-    public void PlayDeathTheme() {
+    public void FinishLoseFightTheme() {
+        inFight = false;
+        audioSource.clip = loseClip;
+        audioSource.Play();
 
-    } 
+        StartCoroutine(FinishFightTheme());
+    }
 
-    public void PlayVictoryTheme() {
+    private IEnumerator FinishFightTheme() {
+        yield return new WaitWhile(() => audioSource.isPlaying);
 
+        PlayLightTheme(true);
+        audioSource.time = themeTime;
     }
 }
