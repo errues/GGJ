@@ -65,9 +65,9 @@ public class GameController : MonoBehaviour {
         characterRoom.AssignCombatRoom(lastFight);
 
         //Eliminamos todos los pasive enemies
-        for (int i = mapController.enemiesTransform.childCount - 1; i >= 0; i--) {
+        /*for (int i = mapController.enemiesTransform.childCount - 1; i >= 0; i--) {
             Destroy(mapController.enemiesTransform.GetChild(i));
-        }
+        }*/
 
         //Asigna el nuevo pasive enemy
         finalEnemy.transform.SetParent(mapController.enemiesTransform);
@@ -75,6 +75,7 @@ public class GameController : MonoBehaviour {
     }
 
     public void FinishGame() {
+        Destroy(finalEnemy);
         StartCoroutine(LaunchCredits());
     }
 
