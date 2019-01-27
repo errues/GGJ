@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5726385934431533961}
   - component: {fileID: 8477782576775496968}
   - component: {fileID: 1542683745115442790}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HabilidadPadreApagado_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 5703777477249313469}
   - component: {fileID: 4503653330041961747}
   - component: {fileID: 5830787854097924683}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HabilidadPadreEncendido_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5524030160247896310}
   - component: {fileID: 7906020058470749807}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CentroPuro
   m_TagString: Untagged
   m_Icon: {fileID: 0}

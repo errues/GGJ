@@ -50,7 +50,9 @@ public class GameController : MonoBehaviour {
 
             //Reinicia si muere el personaje
             yield return new WaitUntil(() => !player.CharacterHealth.IsAlive || characterRoom.Enlighted);
-
+            if (!player.CharacterHealth.IsAlive) {
+                yield return new WaitUntil(() => player.CharacterHealth.IsAlive);
+            }
         } while (!characterRoom.Enlighted);
 
         //Reactiva las puertas del mapa

@@ -50,9 +50,11 @@ public class ExplorationRoom : Room {
     }
 
     private void Start() {
-        if (assignedEnemy != null && assignedCombatRoom != null) {
-            assignedEnemy.AssignRoom(this);
+        if (assignedCombatRoom != null) {
             assignedCombatRoom.AssignRoom(this);
+        }
+        if (assignedEnemy != null) {
+            assignedEnemy.AssignRoom(this);
         }
     }
 
@@ -79,7 +81,9 @@ public class ExplorationRoom : Room {
             // Hacemos la transición de habitaciones
             mapController.FadeOutMap();
             assignedCombatRoom.FadeIn();
-            assignedEnemy.FadeOut();
+            if (assignedEnemy != null) {
+                assignedEnemy.FadeOut();
+            }
             cameraController.FocusRoom(assignedCombatRoom, fadeSpeed);
             ostController.PlayFightTheme(assignedCombatRoom.ostClip);
 
@@ -98,13 +102,17 @@ public class ExplorationRoom : Room {
 
             // Marcamos la habitación y el enemigo como completados
             enlighted = true;
-            assignedEnemy.Complete();
+            if (assignedEnemy != null) {
+                assignedEnemy.Complete();
+            }
         
             // Hacemos la transición entre habitaciones
             mapController.FadeInMap();
             assignedCombatRoom.DeactivateColliders();
             assignedCombatRoom.FadeOut();
-            assignedEnemy.FadeIn();
+            if (assignedEnemy != null) {
+                assignedEnemy.FadeIn();
+            }
             cameraController.FocusMap(fadingSpeed);
             ostController.FinishVictoryFightTheme();
 

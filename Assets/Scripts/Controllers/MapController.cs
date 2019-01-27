@@ -46,7 +46,7 @@ public class MapController : MonoBehaviour {
         }
     }
 
-    public void EnableDoors() {
+    public void EnableDoors() {        
         foreach (Door door in doors) {
             door.EnabledInteraction = true;
         }

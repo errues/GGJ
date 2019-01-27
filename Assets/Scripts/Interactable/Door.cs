@@ -22,22 +22,24 @@ public class Door : MonoBehaviour, Interactable {
 
     private bool fadingIn;
     private bool fadingOut;
+    private bool enabledInteraction;
     private float alpha;
     private float fadingSpeed = 1;
 
     public bool EnabledInteraction {
         get {
-            return closedDoor ? false : doorInteractionTrigger.enabled;
+            return closedDoor ? false : enabledInteraction;
         }
 
         set {
-            doorInteractionTrigger.enabled = value;
+            enabledInteraction = value;
         }
     }
 
     private void Awake() {
         audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        enabledInteraction = true;
     }
 
     public void Interact() { }

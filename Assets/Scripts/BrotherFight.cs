@@ -28,12 +28,16 @@ public class BrotherFight : CombatRoom {
         fatherSafePoint.SetActive(false);
         dogSafePoint.SetActive(false);
 
-        grandmotherErased = grandmotherRoom.Enlighted;
-        motherErased = motherRoom.Enlighted;
-        fatherErased = fatherRoom.Enlighted;
-        dogErased = dogRoom.Enlighted;
-
         character = GameObject.FindGameObjectWithTag("Character").GetComponent<Character>();
+    }
+
+    public override void Run() {
+        base.Run();
+
+        grandmotherErased = !grandmotherRoom.Enlighted;
+        motherErased = !motherRoom.Enlighted;
+        fatherErased = !fatherRoom.Enlighted;
+        dogErased = !dogRoom.Enlighted;
     }
 
     protected override IEnumerator WaitAndFinish(float time) {
@@ -50,13 +54,13 @@ public class BrotherFight : CombatRoom {
             grandmotherSafePoint.SetActive(false);
         }
 
-        if (fatherRoom.Enlighted && !motherErased) {
+        if (fatherRoom.Enlighted && !fatherErased) {
             fatherSafePoint.SetActive(true);
         } else {
             fatherSafePoint.SetActive(false);
         }
 
-        if (motherRoom.Enlighted && !fatherErased) {
+        if (motherRoom.Enlighted && !motherErased) {
             motherSafePoint.SetActive(true);
         } else {
             motherSafePoint.SetActive(false);

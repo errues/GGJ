@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6062123754083971882}
   - component: {fileID: 4910658072333882031}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CentroCorbata
   m_TagString: Untagged
   m_Icon: {fileID: 0}

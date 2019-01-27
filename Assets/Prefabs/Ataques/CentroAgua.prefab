@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8690790068505038189}
   - component: {fileID: 1283823441041899620}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CentroAgua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,11 +55,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Agua2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8163477092655316692, guid: 311fb5a59f6d4ff499c47042d5c55bb2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 329055930009162984, guid: 311fb5a59f6d4ff499c47042d5c55bb2,
         type: 3}
@@ -114,11 +109,6 @@ PrefabInstance:
     - target: {fileID: 329055930009162984, guid: 311fb5a59f6d4ff499c47042d5c55bb2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3169563705456891174, guid: 311fb5a59f6d4ff499c47042d5c55bb2,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
