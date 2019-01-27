@@ -1,7 +1,16 @@
 fileFormatVersion: 2
 guid: c0c8f49000c59504dbf108f40f6c4789
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: TAIL
+    21300002: BODY
+    21300004: HEAD
+    21300006: LEFT PAW B
+    21300008: LEFT PAW
+    21300010: PerroMalvado_5
+    21300012: PerroMalvado_6
+    21300014: RIGHT PAW B
+    21300016: RIGHT PAW
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +91,191 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TAIL
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1546
+        width: 271
+        height: 243
+      alignment: 9
+      pivot: {x: 0.501845, y: 0.49794236}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5d788f98139244c826651f1942ecb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BODY
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1281
+        width: 452
+        height: 300
+      alignment: 9
+      pivot: {x: 0.4988938, y: 0.49833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100c32561e11cc542b11a53205cd44e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HEAD
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 1547
+        width: 248
+        height: 297
+      alignment: 9
+      pivot: {x: 0.49596772, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5af886c26fc6c429912fd58eaa307a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFT PAW B
+      rect:
+        serializedVersion: 2
+        x: 312.85858
+        y: 824.8586
+        width: 173
+        height: 354.00006
+      alignment: 9
+      pivot: {x: 0.49503708, y: 0.498987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000500f358827c742b00980d49e1d38c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFT PAW
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 757
+        width: 115
+        height: 368
+      alignment: 9
+      pivot: {x: 0.8086956, y: 0.5027174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0f24d285c3d5341a50d1fee5fe2ced
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerroMalvado_5
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 990
+        width: 34
+        height: 117
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c219f8580f5d3904a9b5d9d2f2dfeea3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerroMalvado_6
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 770
+        width: 18
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd624c44330df644793f83f3fd4bb34e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHT PAW B
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 193
+        width: 173
+        height: 354
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50141245}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6ed8ad1a1dc6049b85b2d80d6e1b23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHT PAW
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 186
+        width: 115
+        height: 368
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca64db0ec4581b46b3527a546887e85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4fe44c310ffceee40a55411d280fa7e4
     vertices: []
     indices: 
     edges: []
@@ -94,6 +283,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
+  userData: 636841463260176514
   assetBundleName: 
   assetBundleVariant: 
