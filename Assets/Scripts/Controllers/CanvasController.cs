@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CanvasController : MonoBehaviour {
     public float fadingSpeed = 1;
     public GameObject pausePanel;
+    public Button continueButton;
 
     public bool IsFadingIn {
         get {
@@ -53,6 +55,7 @@ public class CanvasController : MonoBehaviour {
     private void ShowPausePanel() {
         pausePanel.SetActive(true);
         Time.timeScale = 0f;
+        continueButton.Select();
     }
 
     public void HidePausePanel() {
