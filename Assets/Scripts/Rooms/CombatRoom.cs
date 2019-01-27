@@ -95,7 +95,7 @@ public class CombatRoom : Room {
         CheckFadings();
     }
 
-    public void Run() {
+    public virtual void Run() {
         attackIndex = 0;
         canvasController.StartTimeBar(this);
         if (attacks.Length > 0) {

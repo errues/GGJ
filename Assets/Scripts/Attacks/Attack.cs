@@ -9,7 +9,7 @@ public class Attack : MonoBehaviour {
         animator = GetComponentInChildren<Animator>();
     }
 
-    public void Run(float speed) {
+    public virtual void Run(float speed) {
         animator.SetFloat("speed", speed);
     }
 
