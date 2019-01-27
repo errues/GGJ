@@ -20,6 +20,11 @@ public class Door : MonoBehaviour, Interactable {
     private AudioSource audioSource;
     private SpriteRenderer spriteRenderer;
 
+    private bool fadingIn;
+    private bool fadingOut;
+    private float alpha;
+    private float fadingSpeed = 1;
+
     public bool EnabledInteraction {
         get {
             return closedDoor ? false : doorInteractionTrigger.enabled;
@@ -57,5 +62,35 @@ public class Door : MonoBehaviour, Interactable {
         if (!EnabledInteraction) {
                 audioSource.PlayOneShot(closedDoorHit);
             }
+    }
+
+    public void FadeIn() {
+        fadingOut = false;
+        fadingIn = true;
+    }
+
+    public void FadeOut() {
+        fadingOut = true;
+        fadingIn = false;
+    }
+
+    protected virtual void Update() {
+        if (fadingIn) {
+            alpha = Mathf.Clamp(alpha + fadingSpeed * Time.deltaTime, 0, 1);
+
+            spriteRenderer.color = new Color(1, 1, 1, alpha);
+
+            if (alpha == 1) {
+                fadingIn = false;
+            }
+        } else if (fadingOut) {
+            alpha = Mathf.Clamp(alpha - fadingSpeed * Time.deltaTime, 0, 1);
+
+            spriteRenderer.color = new Color(1, 1, 1, alpha);
+
+            if (alpha == 0) {
+                fadingOut = false;
+            }
+        }
     }
 }

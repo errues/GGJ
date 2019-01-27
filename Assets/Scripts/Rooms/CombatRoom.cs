@@ -191,14 +191,6 @@ public class CombatRoom : Room {
         return roomTime;
     }
 
-    private void OnDrawGizmos() {
-        Gizmos.color = Color.white;
-        Gizmos.DrawWireCube(transform.position, bounds);
-
-        Gizmos.color = Color.green;
-        Gizmos.DrawSphere(initialPoint, 1);
-    }
-
     public void StopAllAttacks() {
         StopAllCoroutines();
 
@@ -217,5 +209,13 @@ public class CombatRoom : Room {
         foreach (Collider2D col in colliders) {
             col.enabled = false;
         }
+    }
+
+    private void OnDrawGizmos() {
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireCube(transform.position, bounds);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawSphere(initialPoint, (transform.localScale.x + transform.localScale.y) / 2);
     }
 }

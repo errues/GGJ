@@ -51,13 +51,17 @@ public class MapController : MonoBehaviour {
         }
     }
 
-
     public void FadeInMap() {
         foreach(Room r in explorationRooms) {
             r.FadeIn();
         }
+
         foreach (PassiveEnemy pe in passiveEnemies) {
             pe.FadeIn();
+        }
+
+        foreach (Door d in doors) {
+            d.FadeIn();
         }
     }
 
@@ -65,11 +69,17 @@ public class MapController : MonoBehaviour {
         foreach (Room r in explorationRooms) {
             r.FadeOut();
         }
+
         foreach (PassiveEnemy pe in passiveEnemies) {
             pe.FadeOut();
         }
+
         foreach (Collider2D c2d in explorationColliders) {
             c2d.enabled = false;
+        }
+
+        foreach (Door d in doors) {
+            d.FadeOut();
         }
     }
 

@@ -45,8 +45,10 @@ public class ExplorationRoom : Room {
     }
 
     private void Start() {
-        assignedEnemy.AssignRoom(this);
-        assignedCombatRoom.AssignRoom(this);
+        if (assignedEnemy != null && assignedCombatRoom != null) {
+            assignedEnemy.AssignRoom(this);
+            assignedCombatRoom.AssignRoom(this);
+        }
     }
 
     public void AssignEnemy(PassiveEnemy enemy) {
@@ -112,6 +114,9 @@ public class ExplorationRoom : Room {
         // Paramos la corrutina de esperar a que termine
         assignedCombatRoom.CharacterDied();
 
+        // Desactivamos colliders
+        assignedCombatRoom.DeactivateColliders();
+
         // Lanzamos la animación de muerte
         StartCoroutine(CharacterDeath());
     }
@@ -144,6 +149,10 @@ public class ExplorationRoom : Room {
         character.CharacterGraphics.FadeIn(fadingSpeed);
         mapController.FadeInMap();
         canvasController.FadeOut();
+
+        // Ajustamos la cámara y reactivamos colliders
+        cameraController.FocusMap(fadingSpeed);
+        mapController.ActivateColliders();
 
         // Esperamos a que terminen los fades
         yield return new WaitUntil(() => fadingIn == false);
