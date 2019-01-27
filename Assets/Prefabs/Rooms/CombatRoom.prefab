@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bounds: {x: 12, y: 12}
   initialPoint: {x: 0, y: 0}
+  ostClip: {fileID: 0}
   printTime: 0
   attacks: []
 --- !u!1 &5585425207057732915

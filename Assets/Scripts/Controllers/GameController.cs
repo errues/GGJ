@@ -65,6 +65,7 @@ public class GameController : MonoBehaviour {
         //Asigna la nueva CombatRoom
         characterRoom.Enlighted = false;
         characterRoom.AssignCombatRoom(lastFight);
+        lastFight.AssignRoom(characterRoom);
 
         //Eliminamos todos los pasive enemies
         /*for (int i = mapController.enemiesTransform.childCount - 1; i >= 0; i--) {
@@ -73,6 +74,8 @@ public class GameController : MonoBehaviour {
 
         //Asigna el nuevo pasive enemy
         finalEnemy.transform.SetParent(mapController.enemiesTransform);
+        finalEnemy.AssignRoom(characterRoom);
+        characterRoom.AssignEnemy(finalEnemy);
         finalEnemy.gameObject.SetActive(true);
     }
 

@@ -12,8 +12,11 @@ public class PassiveEnemy : MonoBehaviour {
     public float movingSpeed = 1;
     public float delayBetweenPoints = 2;
 
-    private SpriteMeshInstance[] lightSpriteRenderers;
-    private SpriteMeshInstance[] darkSpriteRenderers;
+    private SpriteMeshInstance[] lightSpriteMeshRenderers;
+    private SpriteMeshInstance[] darkSpriteMeshRenderers;
+
+    private SpriteRenderer[] lightSpriteRenderers;
+    private SpriteRenderer[] darkSpriteRenderers;
 
     private Collider2D[] colliders;
     private Animator[] animators;
@@ -35,10 +38,16 @@ public class PassiveEnemy : MonoBehaviour {
     private void Awake() {
         completed = false;
 
-        lightSpriteRenderers = lightSpriteTransform.GetComponentsInChildren<SpriteMeshInstance>();
-        darkSpriteRenderers = darkSpriteTransform.GetComponentsInChildren<SpriteMeshInstance>();
+        lightSpriteMeshRenderers = lightSpriteTransform.GetComponentsInChildren<SpriteMeshInstance>();
+        darkSpriteMeshRenderers = darkSpriteTransform.GetComponentsInChildren<SpriteMeshInstance>();
 
-        foreach (SpriteMeshInstance sr in lightSpriteRenderers) {
+        lightSpriteRenderers = lightSpriteTransform.GetComponentsInChildren<SpriteRenderer>();
+        darkSpriteRenderers = darkSpriteTransform.GetComponentsInChildren<SpriteRenderer>();
+
+        foreach (SpriteMeshInstance sr in lightSpriteMeshRenderers) {
+            sr.color = new Color(1, 1, 1, 0);
+        }
+        foreach (SpriteRenderer sr in lightSpriteRenderers) {
             sr.color = new Color(1, 1, 1, 0);
         }
 
@@ -70,11 +79,17 @@ public class PassiveEnemy : MonoBehaviour {
             alpha = Mathf.Clamp(alpha + fadingSpeed * Time.deltaTime, 0, 1);
 
             if (completed) {
-                foreach (SpriteMeshInstance sr in lightSpriteRenderers) {
+                foreach (SpriteMeshInstance sr in lightSpriteMeshRenderers) {
+                    sr.color = new Color(1, 1, 1, alpha);
+                }
+                foreach (SpriteRenderer sr in lightSpriteRenderers) {
                     sr.color = new Color(1, 1, 1, alpha);
                 }
             } else {
-                foreach (SpriteMeshInstance sr in darkSpriteRenderers) {
+                foreach (SpriteMeshInstance sr in darkSpriteMeshRenderers) {
+                    sr.color = new Color(1, 1, 1, alpha);
+                }
+                foreach (SpriteRenderer sr in darkSpriteRenderers) {
                     sr.color = new Color(1, 1, 1, alpha);
                 }
             }
@@ -89,11 +104,17 @@ public class PassiveEnemy : MonoBehaviour {
             alpha = Mathf.Clamp(alpha - fadingSpeed * Time.deltaTime, 0, 1);
 
             if (completed) {
-                foreach (SpriteMeshInstance sr in lightSpriteRenderers) {
+                foreach (SpriteMeshInstance sr in lightSpriteMeshRenderers) {
+                    sr.color = new Color(1, 1, 1, alpha);
+                }
+                foreach (SpriteRenderer sr in lightSpriteRenderers) {
                     sr.color = new Color(1, 1, 1, alpha);
                 }
             } else {
-                foreach (SpriteMeshInstance sr in darkSpriteRenderers) {
+                foreach (SpriteMeshInstance sr in darkSpriteMeshRenderers) {
+                    sr.color = new Color(1, 1, 1, alpha);
+                }
+                foreach (SpriteRenderer sr in darkSpriteRenderers) {
                     sr.color = new Color(1, 1, 1, alpha);
                 }
             }
