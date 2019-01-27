@@ -26,6 +26,7 @@ public class OSTController : MonoBehaviour {
     }
 
     public void PlayLightTheme(bool noTime = false) {
+        audioSource.loop = true;
         if(!inFight) {
             if (noTime) {
                 audioSource.time = 0f;
@@ -42,6 +43,7 @@ public class OSTController : MonoBehaviour {
     }
 
     public void PlayDarkTheme(bool noTime = false) {
+        audioSource.loop = true;
         if (!inFight) {
             if (noTime) {
                 audioSource.time = 0f;
@@ -58,6 +60,7 @@ public class OSTController : MonoBehaviour {
     }
 
     public void PlayFightTheme(AudioClip fightTheme) {
+        audioSource.loop = true;
         inFight = true;
         audioSource.time = 0f;
         audioSource.clip = fightTheme;
@@ -65,6 +68,7 @@ public class OSTController : MonoBehaviour {
     }
 
     public void FinishVictoryFightTheme() {
+        audioSource.loop = false;
         inFight = false;
         audioSource.time = 0f;
         audioSource.clip = victoryClip;
@@ -74,6 +78,7 @@ public class OSTController : MonoBehaviour {
     }
 
     public void FinishLoseFightTheme() {
+        audioSource.loop = false;
         inFight = false;
         audioSource.time = 0f;
         audioSource.clip = loseClip;
