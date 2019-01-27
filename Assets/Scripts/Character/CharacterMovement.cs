@@ -98,7 +98,7 @@ public class CharacterMovement : MonoBehaviour {
             }
 
             //Establece la animación de andar
-            characterAnimator.SetBool("Walk", (horizontalMovement != 0 || verticalMovement != 0));
+            characterAnimator.SetBool("walk", (horizontalMovement != 0 || verticalMovement != 0));
         } else if (drivenMovemen) {
             if (lerpMovementStep <= 1f) {
                 lerpMovementStep += normalizedDrivenMovementSpeed * Time.fixedDeltaTime;
