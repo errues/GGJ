@@ -15,7 +15,7 @@ public class CombatRoom : Room {
     private SpriteRenderer spriteRenderer;
     private Collider2D[] colliders;
 
-    private ExplorationRoom assignedRoom;
+    protected ExplorationRoom assignedRoom;
     private CanvasController canvasController;
 
     private float roomTime;
@@ -177,7 +177,7 @@ public class CombatRoom : Room {
         attacks[index].attack.gameObject.SetActive(false);
     }
 
-    private IEnumerator WaitAndFinish(float time) {
+    protected virtual IEnumerator WaitAndFinish(float time) {
         yield return new WaitForSeconds(time);
         
         assignedRoom.FinishRoom();

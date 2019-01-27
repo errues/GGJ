@@ -26,6 +26,9 @@ public class ExplorationRoom : Room {
         get {
             return enlighted;
         }
+        set {
+            enlighted = value;
+        }
     }
 
     protected override void Awake() {

@@ -90,6 +90,12 @@ public class MapController : MonoBehaviour {
         }
     }
 
+    public void EnlightAll() {
+        foreach(ExplorationRoom er in explorationRooms) {
+            er.Enlighted = true;
+        }
+    }
+
     private void OnDrawGizmos() {
         Gizmos.color = Color.white;
         Gizmos.DrawWireCube(transform.position, bounds);

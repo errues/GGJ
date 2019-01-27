@@ -36,6 +36,13 @@ public class BrotherFight : CombatRoom {
         character = GameObject.FindGameObjectWithTag("Character").GetComponent<Character>();
     }
 
+    protected override IEnumerator WaitAndFinish(float time) {
+        yield return new WaitForSeconds(time);
+
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>().ActivateLastFight();
+        assignedRoom.FinishRoom();
+    }
+
     public void StartBrotherAttack() {
         if (grandmotherRoom.Enlighted && !grandmotherErased) {
             grandmotherSafePoint.SetActive(true);
