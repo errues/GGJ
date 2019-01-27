@@ -1027,20 +1027,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Valla
       objectReference: {fileID: 0}
-    - target: {fileID: 1110475841459113884, guid: b195a74f1f6e2f641919574cad2ff449,
+    - target: {fileID: 1110475841459113885, guid: b195a74f1f6e2f641919574cad2ff449,
         type: 3}
-      propertyPath: m_IsActive
+      propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1110475841459113885, guid: b195a74f1f6e2f641919574cad2ff449,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.68411255
-      objectReference: {fileID: 0}
-    - target: {fileID: 1110475841459113885, guid: b195a74f1f6e2f641919574cad2ff449,
-        type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2804759
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1110475841459113885, guid: b195a74f1f6e2f641919574cad2ff449,
         type: 3}
@@ -1189,6 +1184,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PivoteHueco
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140050547337822142, guid: d4d05fda9f09d0a44ac378e315b84737,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3420291384232288994, guid: d4d05fda9f09d0a44ac378e315b84737,
         type: 3}
