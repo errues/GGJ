@@ -10,6 +10,9 @@ public class OSTController : MonoBehaviour {
     public AudioClip victoryClip;
     public AudioClip loseClip;
 
+    [Range(0f,10f)]
+    public float waitForVictoryLose = 5f;
+
     private bool inFight;
     private bool blockAudio;
     private float themeTime;
@@ -91,7 +94,7 @@ public class OSTController : MonoBehaviour {
 
     private IEnumerator FinishFightTheme() {
         blockAudio = true;
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(waitForVictoryLose);
         blockAudio = false;
         PlayLightTheme(true);
         audioSource.time = themeTime;
