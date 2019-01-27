@@ -6,6 +6,8 @@ public class CombatRoom : Room {
     public Vector2 bounds = Vector2.one;
     public Vector2 initialPoint;
 
+    public bool printTime = false;
+
     public AttackParameters[] attacks;
 
     private SpriteRenderer spriteRenderer;
@@ -56,9 +58,13 @@ public class CombatRoom : Room {
 
             ++i;
         }
-        
+
         foreach (AttackParameters ap in attacks) {
             ap.attack.gameObject.SetActive(false);
+        }
+
+        if (printTime) {
+            print("time in " + name + ": " + roomTime);
         }
     }
 
@@ -189,9 +195,7 @@ public class CombatRoom : Room {
     }
 
     public void StopAllAttacks() {
-        if (nextAttack != null) {
-            StopCoroutine(nextAttack);
-        }
+        StopAllCoroutines();
 
         foreach (AttackParameters ap in attacks) {
             ap.attack.gameObject.SetActive(false);
