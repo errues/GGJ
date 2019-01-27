@@ -176,12 +176,12 @@ TextureImporter:
       name: Body
       rect:
         serializedVersion: 2
-        x: 953.4102
+        x: 956.6153
         y: 965
-        width: 121.58978
+        width: 116.99994
         height: 219
       alignment: 9
-      pivot: {x: 0.5065375, y: 0.49999997}
+      pivot: {x: 0.49901482, y: 0.49999997}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,12 +196,12 @@ TextureImporter:
       name: Back_leg
       rect:
         serializedVersion: 2
-        x: 1290.6722
-        y: 1138.3446
-        width: 94.983154
-        height: 146.6554
+        x: 1290.836
+        y: 1138.517
+        width: 96
+        height: 147
       alignment: 9
-      pivot: {x: 0.49827528, y: 0.50223446}
+      pivot: {x: 0.49129105, y: 0.49988458}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: Front_leg
       rect:
         serializedVersion: 2
-        x: 533.5003
-        y: 790.8
-        width: 60.799744
-        height: 223.5
+        x: 533.40045
+        y: 791.85
+        width: 63
+        height: 222
       alignment: 9
-      pivot: {x: 0.5016418, y: 0.4975392}
+      pivot: {x: 0.48570713, y: 0.4961713}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,6 +283,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 636841623519898582
+  userData: 636841690163952268
   assetBundleName: 
   assetBundleVariant: 
