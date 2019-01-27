@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MapController : MonoBehaviour {
+    public Transform explorationTransform;
+
     [Header("Home")]
     public Vector2 respawnPoint = Vector2.zero;
 
@@ -12,6 +14,8 @@ public class MapController : MonoBehaviour {
     private ExplorationRoom[] explorationRooms;
     private CombatRoom[] combatRooms;
     private PassiveEnemy[] passiveEnemies;
+
+    private Collider2D[] explorationColliders;
 
     private List<Door> doors;
 
@@ -25,6 +29,8 @@ public class MapController : MonoBehaviour {
         explorationRooms = GetComponentsInChildren<ExplorationRoom>();
         combatRooms = GetComponentsInChildren<CombatRoom>();
         passiveEnemies = GetComponentsInChildren<PassiveEnemy>();
+
+        explorationColliders = explorationTransform.GetComponentsInChildren<Collider2D>();
     }
 
     private void Start() {
@@ -61,6 +67,15 @@ public class MapController : MonoBehaviour {
         }
         foreach (PassiveEnemy pe in passiveEnemies) {
             pe.FadeOut();
+        }
+        foreach (Collider2D c2d in explorationColliders) {
+            c2d.enabled = false;
+        }
+    }
+
+    public void ActivateColliders() {
+        foreach (Collider2D c2d in explorationColliders) {
+            c2d.enabled = true;
         }
     }
 

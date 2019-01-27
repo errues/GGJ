@@ -71,7 +71,6 @@ public class ExplorationRoom : Room {
 
             // Hacemos la transición de habitaciones
             mapController.FadeOutMap();
-            DeactivateColliders();
             assignedCombatRoom.FadeIn();
             assignedEnemy.FadeOut();
             cameraController.FocusRoom(assignedCombatRoom, fadeSpeed);
@@ -170,7 +169,7 @@ public class ExplorationRoom : Room {
         yield return new WaitUntil(() => assignedCombatRoom.IsFadingOut == false);
         yield return new WaitUntil(() => character.CharacterMovement.IsInDrivenMovement == false);
 
-        ActivateColliders();
+        mapController.ActivateColliders();
         character.CharacterMovement.EnabledInteraction = true;
     }
 

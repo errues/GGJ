@@ -11,6 +11,7 @@ public class CombatRoom : Room {
     public AttackParameters[] attacks;
 
     private SpriteRenderer spriteRenderer;
+    private Collider2D[] colliders;
 
     private ExplorationRoom assignedRoom;
     private CanvasController canvasController;
@@ -25,6 +26,8 @@ public class CombatRoom : Room {
         base.Awake();
 
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        colliders = GetComponentsInChildren<Collider2D>();
+
         canvasController = GameObject.FindGameObjectWithTag("Canvas").GetComponent<CanvasController>();
     }
 
@@ -62,6 +65,8 @@ public class CombatRoom : Room {
         foreach (AttackParameters ap in attacks) {
             ap.attack.gameObject.SetActive(false);
         }
+
+        DeactivateColliders();
 
         if (printTime) {
             print("time in " + name + ": " + roomTime);
@@ -199,6 +204,18 @@ public class CombatRoom : Room {
 
         foreach (AttackParameters ap in attacks) {
             ap.attack.gameObject.SetActive(false);
+        }
+    }
+
+    public void ActivateColliders() {
+        foreach (Collider2D col in colliders) {
+            col.enabled = true;
+        }
+    }
+
+    public void DeactivateColliders() {
+        foreach (Collider2D col in colliders) {
+            col.enabled = false;
         }
     }
 }

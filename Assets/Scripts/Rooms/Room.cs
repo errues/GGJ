@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class Room : MonoBehaviour {
-    private Collider2D[] colliders;
 
     protected bool fadingIn;
     protected bool fadingOut;
@@ -24,7 +23,6 @@ public abstract class Room : MonoBehaviour {
     }
 
     protected virtual void Awake() {
-        colliders = GetComponentsInChildren<Collider2D>();
 
         fadingIn = false;
         fadingOut = false;
@@ -58,18 +56,6 @@ public abstract class Room : MonoBehaviour {
             if (alpha == 0) {
                 fadingOut = false;
             }
-        }
-    }
-
-    public void ActivateColliders() {
-        foreach (Collider2D col in colliders) {
-            col.enabled = true;
-        }
-    }
-
-    public void DeactivateColliders() {
-        foreach (Collider2D col in colliders) {
-            col.enabled = false;
         }
     }
 }
