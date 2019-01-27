@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -631,6 +631,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243205173063721344, guid: 62782c696b63c41939cc978d3224193b,
+        type: 2}
     - target: {fileID: 3579246076524755621, guid: ef411233cdc25de4b9d2d04ad412cb0d,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -661,6 +667,21 @@ PrefabInstance:
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: openDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: 7be096fa008bd4a18a4a85c407c1a696, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closeDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: da78466e04ee441f6a31be971f883c28, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closedDoorHit
+      value: 
+      objectReference: {fileID: 8300000, guid: d02796cac1cf1443ea2c050b6b83dbfc, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef411233cdc25de4b9d2d04ad412cb0d, type: 3}
 --- !u!4 &160539948 stripped
@@ -1408,16 +1429,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6181348286211781962, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
         type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243205173063721344, guid: 62782c696b63c41939cc978d3224193b,
+        type: 2}
+    - target: {fileID: 6181348286211781962, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: openDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: bd14bbc06e8d04e238359c72174d3515, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closeDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: da78466e04ee441f6a31be971f883c28, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closedDoorHit
+      value: 
+      objectReference: {fileID: 8300000, guid: d02796cac1cf1443ea2c050b6b83dbfc, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef411233cdc25de4b9d2d04ad412cb0d, type: 3}
 --- !u!4 &388809691 stripped
@@ -1634,6 +1676,27 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243205173063721344, guid: 62782c696b63c41939cc978d3224193b,
+        type: 2}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: openDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: bd14bbc06e8d04e238359c72174d3515, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closeDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: da78466e04ee441f6a31be971f883c28, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closedDoorHit
+      value: 
+      objectReference: {fileID: 8300000, guid: cb3b04af8de5349bc8a9079115501b39, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef411233cdc25de4b9d2d04ad412cb0d, type: 3}
 --- !u!4 &407619818 stripped
@@ -1872,6 +1935,27 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243205173063721344, guid: 62782c696b63c41939cc978d3224193b,
+        type: 2}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: openDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: 7be096fa008bd4a18a4a85c407c1a696, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closeDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: da78466e04ee441f6a31be971f883c28, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closedDoorHit
+      value: 
+      objectReference: {fileID: 8300000, guid: cb3b04af8de5349bc8a9079115501b39, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef411233cdc25de4b9d2d04ad412cb0d, type: 3}
 --- !u!4 &529027871 stripped
@@ -2058,16 +2142,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6181348286211781962, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
         type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243205173063721344, guid: 62782c696b63c41939cc978d3224193b,
+        type: 2}
+    - target: {fileID: 6181348286211781962, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: openDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: bd14bbc06e8d04e238359c72174d3515, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closeDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: da78466e04ee441f6a31be971f883c28, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closedDoorHit
+      value: 
+      objectReference: {fileID: 8300000, guid: d02796cac1cf1443ea2c050b6b83dbfc, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef411233cdc25de4b9d2d04ad412cb0d, type: 3}
 --- !u!4 &543107011 stripped
@@ -2287,9 +2392,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorCollider: {fileID: 593455465}
   doorInteractionTrigger: {fileID: 593455464}
-  openDoor: {fileID: 0}
-  closeDoor: {fileID: 0}
-  closedDoorHit: {fileID: 0}
+  openDoor: {fileID: 8300000, guid: 7be096fa008bd4a18a4a85c407c1a696, type: 3}
+  closeDoor: {fileID: 8300000, guid: da78466e04ee441f6a31be971f883c28, type: 3}
+  closedDoorHit: {fileID: 8300000, guid: cb3b04af8de5349bc8a9079115501b39, type: 3}
   closedDoor: 1
 --- !u!82 &593455463
 AudioSource:
@@ -2300,7 +2405,8 @@ AudioSource:
   m_GameObject: {fileID: 593455459}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243205173063721344, guid: 62782c696b63c41939cc978d3224193b,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -4301,6 +4407,27 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243205173063721344, guid: 62782c696b63c41939cc978d3224193b,
+        type: 2}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: openDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: bd14bbc06e8d04e238359c72174d3515, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closeDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: da78466e04ee441f6a31be971f883c28, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closedDoorHit
+      value: 
+      objectReference: {fileID: 8300000, guid: cb3b04af8de5349bc8a9079115501b39, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef411233cdc25de4b9d2d04ad412cb0d, type: 3}
 --- !u!4 &1325154279 stripped
@@ -4773,6 +4900,32 @@ PrefabInstance:
       propertyPath: respawnPoint.y
       value: 3.1
       objectReference: {fileID: 0}
+    - target: {fileID: 8093887322768875844, guid: 3f860fbe9a2a07b4fbb46f2b5eef0293,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243449956809606816, guid: 62782c696b63c41939cc978d3224193b,
+        type: 2}
+    - target: {fileID: 3735156588823440588, guid: 3f860fbe9a2a07b4fbb46f2b5eef0293,
+        type: 3}
+      propertyPath: lightTheme
+      value: 
+      objectReference: {fileID: 8300000, guid: 8cb9961cacb2b41b0813e5846ef28cf3, type: 3}
+    - target: {fileID: 3735156588823440588, guid: 3f860fbe9a2a07b4fbb46f2b5eef0293,
+        type: 3}
+      propertyPath: darkTheme
+      value: 
+      objectReference: {fileID: 8300000, guid: fcdf72b904b7540ee9d0d69c24efa268, type: 3}
+    - target: {fileID: 3735156588823440588, guid: 3f860fbe9a2a07b4fbb46f2b5eef0293,
+        type: 3}
+      propertyPath: loseClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8ac932998385a4b148ef2f3f697e4954, type: 3}
+    - target: {fileID: 3735156588823440588, guid: 3f860fbe9a2a07b4fbb46f2b5eef0293,
+        type: 3}
+      propertyPath: victoryClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 06a9c6dfc39d54bec982e66f72ba5f79, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f860fbe9a2a07b4fbb46f2b5eef0293, type: 3}
 --- !u!4 &1436705664 stripped
@@ -5682,6 +5835,27 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243205173063721344, guid: 62782c696b63c41939cc978d3224193b,
+        type: 2}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: openDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: bd14bbc06e8d04e238359c72174d3515, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closeDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: da78466e04ee441f6a31be971f883c28, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closedDoorHit
+      value: 
+      objectReference: {fileID: 8300000, guid: cb3b04af8de5349bc8a9079115501b39, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef411233cdc25de4b9d2d04ad412cb0d, type: 3}
 --- !u!4 &1704875150 stripped
@@ -6961,6 +7135,27 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243205173063721344, guid: 62782c696b63c41939cc978d3224193b,
+        type: 2}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: openDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: bd14bbc06e8d04e238359c72174d3515, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closeDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: 7be096fa008bd4a18a4a85c407c1a696, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closedDoorHit
+      value: 
+      objectReference: {fileID: 8300000, guid: d02796cac1cf1443ea2c050b6b83dbfc, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef411233cdc25de4b9d2d04ad412cb0d, type: 3}
 --- !u!4 &2013012663 stripped
@@ -7576,6 +7771,27 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243205173063721344, guid: 62782c696b63c41939cc978d3224193b,
+        type: 2}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: openDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: bd14bbc06e8d04e238359c72174d3515, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closeDoor
+      value: 
+      objectReference: {fileID: 8300000, guid: da78466e04ee441f6a31be971f883c28, type: 3}
+    - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: closedDoorHit
+      value: 
+      objectReference: {fileID: 8300000, guid: cb3b04af8de5349bc8a9079115501b39, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef411233cdc25de4b9d2d04ad412cb0d, type: 3}
 --- !u!4 &2124730292 stripped
