@@ -6627,8 +6627,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightTheme: {fileID: 8300000, guid: 8cb9961cacb2b41b0813e5846ef28cf3, type: 3}
   darkTheme: {fileID: 8300000, guid: fcdf72b904b7540ee9d0d69c24efa268, type: 3}
-  victoryClip: {fileID: 8300000, guid: 06a9c6dfc39d54bec982e66f72ba5f79, type: 3}
-  loseClip: {fileID: 8300000, guid: 8ac932998385a4b148ef2f3f697e4954, type: 3}
+  victoryClip: {fileID: 8300000, guid: 27b2b94011974446b83a2d5d1a025ea4, type: 3}
+  loseClip: {fileID: 8300000, guid: 79957a6764a0940ea93aafe20e7b70ae, type: 3}
 --- !u!1 &5579981955417109205
 GameObject:
   m_ObjectHideFlags: 0
@@ -7480,6 +7480,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243205173063721344, guid: 62782c696b63c41939cc978d3224193b,
+        type: 2}
     - target: {fileID: 3579246076524755621, guid: ef411233cdc25de4b9d2d04ad412cb0d,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -7510,17 +7521,6 @@ PrefabInstance:
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
-        type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 243205173063721344, guid: 62782c696b63c41939cc978d3224193b,
-        type: 2}
     - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
         type: 3}
       propertyPath: openDoor
