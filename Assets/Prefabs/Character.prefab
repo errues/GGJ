@@ -882,7 +882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.98743594
+  m_Length: 0.98743576
   m_ChildTransform: {fileID: 394771755}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &1780147558
@@ -1077,6 +1077,7 @@ GameObject:
   - component: {fileID: 6091124927336134682}
   - component: {fileID: 1714094701}
   - component: {fileID: 1714094710}
+  - component: {fileID: 3597335825662871723}
   m_Layer: 0
   m_Name: Character
   m_TagString: Character
@@ -1297,5 +1298,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1062bdf732d834c47a2dea78f71f4923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3597335825662871723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7832541083995793105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7d81af0892cd44eb3378a4c0f930ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
