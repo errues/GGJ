@@ -76,6 +76,7 @@ public class GameController : MonoBehaviour {
         finalEnemy.transform.SetParent(mapController.enemiesTransform);
         finalEnemy.AssignRoom(characterRoom);
         characterRoom.AssignEnemy(finalEnemy);
+        mapController.RefreshEnemyArray();
         finalEnemy.gameObject.SetActive(true);
     }
 

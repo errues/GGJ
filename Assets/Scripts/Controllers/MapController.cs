@@ -40,6 +40,10 @@ public class MapController : MonoBehaviour {
         }
     }
 
+    public void RefreshEnemyArray() {
+        passiveEnemies = GetComponentsInChildren<PassiveEnemy>();
+    }
+
     public void DissableDoors() {
         foreach (Door door in doors) {
             door.EnabledInteraction = false;
