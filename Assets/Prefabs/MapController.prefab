@@ -6610,6 +6610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explorationTransform: {fileID: 7551429717665844510}
+  enemiesTransform: {fileID: 4372089151869653967}
   respawnPoint: {x: -4.06, y: 3.1}
   bounds: {x: 18.7, y: 9.5}
 --- !u!114 &3735156588823440588
@@ -7479,17 +7480,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
-        type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 243205173063721344, guid: 62782c696b63c41939cc978d3224193b,
-        type: 2}
     - target: {fileID: 3579246076524755621, guid: ef411233cdc25de4b9d2d04ad412cb0d,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -7520,6 +7510,17 @@ PrefabInstance:
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036746773704101634, guid: ef411233cdc25de4b9d2d04ad412cb0d,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243205173063721344, guid: 62782c696b63c41939cc978d3224193b,
+        type: 2}
     - target: {fileID: 5621206890186299526, guid: ef411233cdc25de4b9d2d04ad412cb0d,
         type: 3}
       propertyPath: openDoor

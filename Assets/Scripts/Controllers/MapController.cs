@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MapController : MonoBehaviour {
     public Transform explorationTransform;
+    public Transform enemiesTransform;
 
     [Header("Home")]
     public Vector2 respawnPoint = Vector2.zero;
