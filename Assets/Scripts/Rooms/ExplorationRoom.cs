@@ -13,6 +13,7 @@ public class ExplorationRoom : Room {
     private Character character;
 
     private MapController mapController;
+    private OSTController ostController;
     private CameraController cameraController;
     private CanvasController canvasController;
 
@@ -33,6 +34,7 @@ public class ExplorationRoom : Room {
 
         character = GameObject.FindGameObjectWithTag("Character").GetComponent<Character>();
         mapController = GameObject.FindGameObjectWithTag("MapController").GetComponent<MapController>();
+        ostController = mapController.GetComponent<OSTController>();
         cameraController = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>();
         canvasController = GameObject.FindGameObjectWithTag("Canvas").GetComponent<CanvasController>();
 
@@ -76,6 +78,7 @@ public class ExplorationRoom : Room {
             assignedCombatRoom.FadeIn();
             assignedEnemy.FadeOut();
             cameraController.FocusRoom(assignedCombatRoom, fadeSpeed);
+            ostController.PlayFightTheme(assignedCombatRoom.ostClip);
 
             StartCoroutine(WaitAndRun());
         }
@@ -100,6 +103,7 @@ public class ExplorationRoom : Room {
             assignedCombatRoom.FadeOut();
             assignedEnemy.FadeIn();
             cameraController.FocusMap(fadingSpeed);
+            ostController.FinishFightTheme();
 
             StartCoroutine(WaitAndContinueGame());
         }
@@ -119,6 +123,9 @@ public class ExplorationRoom : Room {
 
         // Pausamos la barra
         canvasController.PauseBar();
+
+        // Reproducimos sonido de muerte
+        ostController.PlayDeathTheme();
 
         // Lanzamos la animación de muerte
         StartCoroutine(CharacterDeath());

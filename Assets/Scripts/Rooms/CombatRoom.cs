@@ -6,6 +6,8 @@ public class CombatRoom : Room {
     public Vector2 bounds = Vector2.one;
     public Vector2 initialPoint;
 
+    public AudioClip ostClip;
+
     public bool printTime = false;
 
     public AttackParameters[] attacks;

@@ -63,4 +63,12 @@ public class OSTController : MonoBehaviour {
         PlayLightTheme(true);
         audioSource.time = themeTime;
     }
+
+    public void PlayDeathTheme() {
+
+    } 
+
+    public void PlayVictoryTheme() {
+
+    }
 }
