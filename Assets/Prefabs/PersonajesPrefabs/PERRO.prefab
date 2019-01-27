@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.14999999
+  m_Length: 0.15
   m_ChildTransform: {fileID: 5400234277332479672}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &72207278949621165
@@ -339,6 +339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4174113985513615205}
+  - component: {fileID: 8285836269412138084}
   m_Layer: 0
   m_Name: PERRO
   m_TagString: Untagged
@@ -361,6 +362,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &8285836269412138084
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480983284477528518}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2aa08d40f46384140b3316ee9596f72f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5476617026008642653
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +405,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5476617026008642653}
-  m_LocalRotation: {x: 0, y: 0, z: 0.07444845, w: 0.99722487}
+  m_LocalRotation: {x: 0, y: 0, z: 0.07589116, w: 0.9971161}
   m_LocalPosition: {x: 0.6700001, y: -0.000000055413693, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -406,7 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.7900001
+  m_Length: 0.79000026
   m_ChildTransform: {fileID: 1303106998194606702}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &5784737367441672867
