@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 8dd41a77ed059ff4b87d43a18b896e01
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: HEAD
+    21300002: BODY
+    21300004: TAIL
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +85,71 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: HEAD
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 1213
+        width: 152
+        height: 114
+      alignment: 9
+      pivot: {x: 0.45723686, y: 0.46052632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba0743f8dab063498f698319bc42a07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BODY
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 863.8175
+        width: 184
+        height: 180.1825
+      alignment: 9
+      pivot: {x: 0.5679348, y: 0.5421309}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df10f95417cc4f4c8a89e639d6fd3db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TAIL
+      rect:
+        serializedVersion: 2
+        x: 1465.9738
+        y: 826
+        width: 34.026245
+        height: 51
+      alignment: 9
+      pivot: {x: 0.48569113, y: 0.4901961}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7832b5c36146a0041b1e0d4799cc1ad4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e608b09275b32bf4bab00993ba9a710a
     vertices: []
     indices: 
     edges: []
@@ -94,6 +157,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
+  userData: 636841449043916330
   assetBundleName: 
   assetBundleVariant: 
