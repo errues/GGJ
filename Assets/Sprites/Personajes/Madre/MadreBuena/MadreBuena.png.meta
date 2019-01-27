@@ -8,6 +8,12 @@ TextureImporter:
     21300006: LEFT ARM
     21300008: RIGHT LEG
     21300010: LEFT LEG
+    21300012: MadreBuena_0
+    21300014: MadreBuena_1
+    21300016: MadreBuena_2
+    21300018: MadreBuena_3
+    21300020: MadreBuena_4
+    21300022: MadreBuena_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,121 +96,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HEAD
+      name: MadreBuena_0
       rect:
         serializedVersion: 2
-        x: 665
-        y: 1493
-        width: 170
-        height: 180
+        x: 670
+        y: 1498
+        width: 160
+        height: 170
       alignment: 9
+      pivot: {x: 0.532819, y: 0.16022949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc83775368c9b54a928b9648abe3830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadreBuena_1
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 1180
+        width: 183
+        height: 325
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24c291068c3d1ac40937516ae38ebbf4
+      spriteID: fdc3fecbc4cae404e9a5874c9b5b5a67
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BODY
+      name: MadreBuena_2
       rect:
         serializedVersion: 2
-        x: 1356
-        y: 1173
-        width: 197
-        height: 339
+        x: 313
+        y: 1031
+        width: 85
+        height: 261
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.64533764, y: 0.8029266}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a3bb113f0c921541bdf03d752e71d58
+      spriteID: 12b160e7f1c5e53429f8182185eeff05
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RIGHT ARM
+      name: MadreBuena_3
       rect:
         serializedVersion: 2
-        x: 306
-        y: 1024
-        width: 98
-        height: 275
+        x: 843
+        y: 1059
+        width: 85
+        height: 261
       alignment: 9
-      pivot: {x: 0.4642857, y: 0.49272728}
+      pivot: {x: 0.35466236, y: 0.83132595}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2a323d4c7872914992dae4c09eac46a
+      spriteID: a1b96adfe36b1cc47b8fe180f9484beb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LEFT ARM
+      name: MadreBuena_4
       rect:
         serializedVersion: 2
-        x: 836
-        y: 1052
-        width: 99.58661
-        height: 275
-      alignment: 9
-      pivot: {x: 0.4970548, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9822ecf0ec7ed434d8fb6dc3d658b747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RIGHT LEG
-      rect:
-        serializedVersion: 2
-        x: 820.4333
-        y: 500
-        width: 124.20056
-        height: 319
-      alignment: 9
-      pivot: {x: 0.49570397, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03ab5d057b449e34c9e3ae708865265d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LEFT LEG
-      rect:
-        serializedVersion: 2
-        x: 1597
-        y: 477
-        width: 111
+        x: 828
+        y: 507
+        width: 108
         height: 305
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.4313688, y: 0.8807375}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45a78941aadca034a9c6e37f6dce2e8e
+      spriteID: d8d5a5cbc48f69f429fab73c78b54057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MadreBuena_5
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 484
+        width: 97
+        height: 291
+      alignment: 9
+      pivot: {x: 0.52547365, y: 0.89905477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f90187afbc38244389aa48613db9a04
       vertices: []
       indices: 
       edges: []
