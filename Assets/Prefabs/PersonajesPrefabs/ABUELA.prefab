@@ -377,6 +377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4039283595744008871}
   - component: {fileID: 6403542502923085517}
+  - component: {fileID: 614891243}
   m_Layer: 0
   m_Name: TORSO 1
   m_TagString: Untagged
@@ -418,6 +419,25 @@ MonoBehaviour:
   m_Length: 1.4899999
   m_ChildTransform: {fileID: 0}
   m_AttachedIK: {fileID: 0}
+--- !u!95 &614891243
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5020465267666195889}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce67a3279ea32ea4e93eb3f4c34dd2a9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5518328206925885200
 GameObject:
   m_ObjectHideFlags: 0
