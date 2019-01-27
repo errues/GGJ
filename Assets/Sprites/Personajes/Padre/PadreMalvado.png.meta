@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 8447588b927cc824e9a05337a3a3f040
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: PadreMalvado_0
+    21300002: PadreMalvado_1
+    21300004: PadreMalvado_2
+    21300006: PadreMalvado_3
+    21300008: PadreMalvado_4
+    21300010: PadreMalvado_5
+    21300012: PadreMalvado_6
+    21300014: PadreMalvado_7
+    21300016: PadreMalvado_8
+    21300018: PadreMalvado_9
+    21300020: PadreMalvado_10
+    21300022: PadreMalvado_11
+    21300024: PadreMalvado_12
+    21300026: PadreMalvado_13
+    21300028: PadreMalvado_14
+    21300030: PadreMalvado_15
+    21300032: PadreMalvado_16
+    21300034: PadreMalvado_17
+    21300036: PadreMalvado_18
+    21300038: PadreMalvado_19
+    21300040: PadreMalvado_20
+    21300042: PadreMalvado_21
+    21300044: PadreMalvado_22
+    21300046: PadreMalvado_23
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +106,491 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PadreMalvado_0
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1630
+        width: 193
+        height: 247
+      alignment: 9
+      pivot: {x: 0.4974093, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1887528d9a37ce54aa15e2758d08433e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_1
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 1765
+        width: 221
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda16c81b1d06044abb2fc5e7144791e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_2
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 1782
+        width: 48
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368c976d67048ef4a946088fba4db2d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_3
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1779
+        width: 19
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef8545d56e88ad46bbf0846c41c78c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_4
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 1767
+        width: 59
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b171f01ab2cea47a61525c71b63757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_5
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1693
+        width: 90
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a0a43c3aaa226469a7103fc4d17554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_6
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1251
+        width: 522
+        height: 507
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49506903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1694c799fe013a140a4d5b2976da88b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_7
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1742
+        width: 50
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bef1caa3146f3748af799fceff6bec3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_8
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 1667
+        width: 112
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c506080f78406438201a12b034873e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_9
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1434
+        width: 176
+        height: 247
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed90f33f783c37489ae0be91ebaa04c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_10
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 1606
+        width: 53
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c893b7168f5284cbe04794f0f18323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_11
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 1476
+        width: 65
+        height: 134
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f13d142790dde4a8b9dfda00e2102f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_12
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1225
+        width: 73
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f82a0db85d9efd469f0a62d1ed1932f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_13
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1272
+        width: 44
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c300681bb9ab0a84195969680df8142a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_14
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 796
+        width: 189
+        height: 455
+      alignment: 9
+      pivot: {x: 0.47354496, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07843f7b101d53409e97ed57e6411c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_15
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1222
+        width: 38
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b9699afa9f9b242befadabb8a3a1b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_16
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1036
+        width: 72
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95aeb063457f004eb99744d794992ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_17
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1041
+        width: 57
+        height: 186
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef188648f9a99fc4c9e11340cc0da923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_18
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 653
+        width: 192
+        height: 452
+      alignment: 9
+      pivot: {x: 0.6067709, y: 0.5011062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd678b2e4003534d85a3cb92dbca30e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_19
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 1079
+        width: 38
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc79640fc627ef43bb4c3661209f4b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_20
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 1086
+        width: 63
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a50aac7bd0a866547b4226194d6b4104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_21
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 898
+        width: 45
+        height: 191
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ebf67e95a7e924fbdfa014ff011d0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_22
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 246
+        width: 104
+        height: 183
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5027322}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ea021b6e010e445a6e05c325dcebf0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PadreMalvado_23
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 170
+        width: 92
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5543478, y: 0.48816568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec0f5d04ee8c604aa89384c7bf8e3f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 09e87e9774620794f8dbea6c6d025e08
     vertices: []
     indices: 
     edges: []
@@ -94,6 +598,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
+  userData: 636841437787489993
   assetBundleName: 
   assetBundleVariant: 
