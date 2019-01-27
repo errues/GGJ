@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -640,8 +640,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 457.9, y: -259.1}
-  m_SizeDelta: {x: 828.6, y: 448.8}
+  m_AnchoredPosition: {x: 540.9, y: -275.1}
+  m_SizeDelta: {x: 994.7, y: 480.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1478083032
 MonoBehaviour:
@@ -676,7 +676,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TITULO DEL JUEGASO
+  m_Text: H?ME
 --- !u!222 &1478083033
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -886,22 +886,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.4
       objectReference: {fileID: 0}
-    - target: {fileID: 7778150567707760939, guid: 018d713b33a1a354fb034563a5322e96,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7778150567708522389, guid: 018d713b33a1a354fb034563a5322e96,
         type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 7778150568054888758, guid: 018d713b33a1a354fb034563a5322e96,
+    - target: {fileID: 7778150567707760939, guid: 018d713b33a1a354fb034563a5322e96,
         type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 7778150568975162511, guid: 018d713b33a1a354fb034563a5322e96,
+    - target: {fileID: 7778150568054888758, guid: 018d713b33a1a354fb034563a5322e96,
         type: 3}
       propertyPath: m_Mesh
       value: 
@@ -912,6 +907,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7778150569263019181, guid: 018d713b33a1a354fb034563a5322e96,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778150568975162511, guid: 018d713b33a1a354fb034563a5322e96,
         type: 3}
       propertyPath: m_Mesh
       value: 

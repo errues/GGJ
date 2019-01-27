@@ -28,13 +28,12 @@ public class OSTController : MonoBehaviour {
     public void PlayLightTheme(bool noTime = false) {
         if(!inFight) {
             if (noTime) {
-                audioSource.Stop();
+                audioSource.time = 0f;
                 audioSource.clip = lightTheme;
                 audioSource.Play();
             }
             else {
                 themeTime = audioSource.time;
-                audioSource.Stop();
                 audioSource.clip = lightTheme;
                 audioSource.Play();
                 audioSource.time = themeTime;
@@ -45,13 +44,12 @@ public class OSTController : MonoBehaviour {
     public void PlayDarkTheme(bool noTime = false) {
         if (!inFight) {
             if (noTime) {
-                audioSource.Stop();
+                audioSource.time = 0f;
                 audioSource.clip = darkTheme;
                 audioSource.Play();
             }
             else {
                 themeTime = audioSource.time;
-                audioSource.Stop();
                 audioSource.clip = darkTheme;
                 audioSource.Play();
                 audioSource.time = themeTime;
@@ -61,14 +59,14 @@ public class OSTController : MonoBehaviour {
 
     public void PlayFightTheme(AudioClip fightTheme) {
         inFight = true;
-        audioSource.Stop();
+        audioSource.time = 0f;
         audioSource.clip = fightTheme;
         audioSource.Play();
     }
 
     public void FinishVictoryFightTheme() {
         inFight = false;
-        audioSource.Stop();
+        audioSource.time = 0f;
         audioSource.clip = victoryClip;
         audioSource.Play();
 
@@ -77,7 +75,7 @@ public class OSTController : MonoBehaviour {
 
     public void FinishLoseFightTheme() {
         inFight = false;
-        audioSource.Stop();
+        audioSource.time = 0f;
         audioSource.clip = loseClip;
         audioSource.Play();
 
