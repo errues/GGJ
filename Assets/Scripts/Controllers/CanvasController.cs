@@ -40,4 +40,8 @@ public class CanvasController : MonoBehaviour {
     public void FadeOut() {
         fadeImage.FadeOut(fadingSpeed);
     }
+
+    public void PauseBar() {
+        timeBar.Pause();
+    }
 }
