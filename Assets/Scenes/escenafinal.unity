@@ -2058,6 +2058,21 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5884055719618232158, guid: b28429418d4003f44ae5c46b2cf4704e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.043314703
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884055719618232158, guid: b28429418d4003f44ae5c46b2cf4704e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9990615
+      objectReference: {fileID: 0}
+    - target: {fileID: 5884055719618232158, guid: b28429418d4003f44ae5c46b2cf4704e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -4.965
+      objectReference: {fileID: 0}
     - target: {fileID: 5884055719321113933, guid: b28429418d4003f44ae5c46b2cf4704e,
         type: 3}
       propertyPath: m_Mesh
@@ -2179,6 +2194,10 @@ PrefabInstance:
       propertyPath: initialPoint.y
       value: 0.62
       objectReference: {fileID: 0}
+    - target: {fileID: 1172028459, guid: 8a26eab8e5751db48a4f406346dfa5bc, type: 3}
+      propertyPath: ostClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9fe9fd24ca8b549759e0dc8ff7c9e676, type: 3}
     - target: {fileID: 663681256, guid: 8a26eab8e5751db48a4f406346dfa5bc, type: 3}
       propertyPath: m_Offset.y
       value: 8.505885
@@ -6832,6 +6851,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1708339455038609952, guid: b28429418d4003f44ae5c46b2cf4704e,
+        type: 3}
+      propertyPath: pathPoints.Array.data[0].x
+      value: -7.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708339455038609952, guid: b28429418d4003f44ae5c46b2cf4704e,
+        type: 3}
+      propertyPath: pathPoints.Array.data[1].x
+      value: -7.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708339455038609952, guid: b28429418d4003f44ae5c46b2cf4704e,
+        type: 3}
+      propertyPath: pathPoints.Array.data[0].y
+      value: 2.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708339455038609952, guid: b28429418d4003f44ae5c46b2cf4704e,
+        type: 3}
+      propertyPath: pathPoints.Array.data[1].y
+      value: 1.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708339455038609952, guid: b28429418d4003f44ae5c46b2cf4704e,
+        type: 3}
+      propertyPath: pathPoints.Array.data[2].x
+      value: -6.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708339455038609952, guid: b28429418d4003f44ae5c46b2cf4704e,
+        type: 3}
+      propertyPath: pathPoints.Array.data[2].y
+      value: 2.75
+      objectReference: {fileID: 0}
     - target: {fileID: 5884055717530130244, guid: b28429418d4003f44ae5c46b2cf4704e,
         type: 3}
       propertyPath: m_Mesh
@@ -8154,6 +8203,11 @@ PrefabInstance:
       propertyPath: attacks.Array.data[4].delay
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5585425206931238381, guid: c1e169ceb83882743a9005006acf877d,
+        type: 3}
+      propertyPath: ostClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d6432cfd67624c4ca693683c67f3979, type: 3}
     - target: {fileID: 5585425207057732913, guid: c1e169ceb83882743a9005006acf877d,
         type: 3}
       propertyPath: m_Sprite
@@ -8971,6 +9025,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708339455038609952, guid: b28429418d4003f44ae5c46b2cf4704e,
+        type: 3}
+      propertyPath: pathPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708339455038609952, guid: b28429418d4003f44ae5c46b2cf4704e,
+        type: 3}
+      propertyPath: pathPoints.Array.data[0].x
+      value: 8.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708339455038609952, guid: b28429418d4003f44ae5c46b2cf4704e,
+        type: 3}
+      propertyPath: pathPoints.Array.data[0].y
+      value: -2.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708339455038609952, guid: b28429418d4003f44ae5c46b2cf4704e,
+        type: 3}
+      propertyPath: pathPoints.Array.data[1].x
+      value: 7.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708339455038609952, guid: b28429418d4003f44ae5c46b2cf4704e,
+        type: 3}
+      propertyPath: pathPoints.Array.data[1].y
+      value: -3.73
       objectReference: {fileID: 0}
     - target: {fileID: 5884055717530130244, guid: b28429418d4003f44ae5c46b2cf4704e,
         type: 3}
