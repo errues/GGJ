@@ -89,12 +89,12 @@ TextureImporter:
       name: Head
       rect:
         serializedVersion: 2
-        x: 612
-        y: 1152
-        width: 331
-        height: 306
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 608
+        y: 1151
+        width: 338
+        height: 313
+      alignment: 9
+      pivot: {x: 0.5232674, y: 0.2410483}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -109,12 +109,12 @@ TextureImporter:
       name: Body
       rect:
         serializedVersion: 2
-        x: 1092
-        y: 867
-        width: 160
-        height: 289
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1086
+        y: 860
+        width: 173
+        height: 301
+      alignment: 9
+      pivot: {x: 0.49710983, y: 0.50332224}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -136,6 +136,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
+  userData: 636841799106020592
   assetBundleName: 
   assetBundleVariant: 
