@@ -78,7 +78,7 @@ public class OSTController : MonoBehaviour {
     }
 
     private IEnumerator FinishFightTheme() {
-        yield return new WaitWhile(() => audioSource.isPlaying);
+        yield return new WaitForSeconds(5f);
 
         PlayLightTheme(true);
         audioSource.time = themeTime;
