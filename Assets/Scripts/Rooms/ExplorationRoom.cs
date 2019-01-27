@@ -117,13 +117,22 @@ public class ExplorationRoom : Room {
         // Desactivamos colliders
         assignedCombatRoom.DeactivateColliders();
 
+        // Pausamos la barra
+        canvasController.PauseBar();
+
         // Lanzamos la animación de muerte
         StartCoroutine(CharacterDeath());
     }
 
     private IEnumerator CharacterDeath() {
         // Esperamos un segundo
-        yield return new WaitForSeconds(1);
+        //yield return new WaitForSeconds(1);
+
+        // Lanzamos la animación de muerte
+        character.CharacterHealth.PlayDeathAnimation();
+
+        // Esperamos a que termine, y un poco más
+        yield return new WaitForSeconds(2.5f);
 
         // Hacemos un fade del canvas, personaje y habitación
         canvasController.FadeIn();
@@ -134,10 +143,13 @@ public class ExplorationRoom : Room {
         yield return new WaitUntil(() => fadingOut == false);
         yield return new WaitUntil(() => character.CharacterGraphics.IsFadingOut == false);
         yield return new WaitUntil(() => canvasController.IsFadingOut == false);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
 
         // Posicionamos al personaje en casa
         character.transform.position = new Vector3(mapController.respawnPoint.x, mapController.respawnPoint.y, character.transform.position.z);
+
+        // Lo volvemos bueno
+        character.CharacterHealth.GoGood();
 
         // Reseteamos el timebar
         canvasController.TerminateTimeBar();
