@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterHealth : MonoBehaviour {
     public RenderTexture attackTargetTexture;
+    public GameObject deathAnimation;
 
     private Texture2D tex;
     private Rect rectReadPicture;
@@ -59,5 +60,14 @@ public class CharacterHealth : MonoBehaviour {
 
     public void SetAlive(bool alive) {
         this.alive = alive;
+    }
+
+    public void PlayDeathAnimation() {
+        deathAnimation.SetActive(false);
+        deathAnimation.SetActive(true);
+    }
+
+    public void GoGood() {
+        deathAnimation.GetComponent<DeathAnimation>().GoGood();
     }
 }

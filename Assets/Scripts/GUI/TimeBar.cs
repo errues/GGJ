@@ -56,4 +56,8 @@ public class TimeBar : MonoBehaviour {
         bar.sizeDelta = new Vector2(originalWidth, bar.sizeDelta.y);
         barParent.SetActive(false);
     }
+
+    public void Pause() {
+        running = false;
+    }
 }
