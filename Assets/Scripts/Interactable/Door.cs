@@ -22,7 +22,7 @@ public class Door : MonoBehaviour, Interactable {
 
     public bool EnabledInteraction {
         get {
-            return closedDoor ? doorInteractionTrigger.enabled : closedDoor;
+            return closedDoor ? false : doorInteractionTrigger.enabled;
         }
 
         set {
@@ -38,19 +38,24 @@ public class Door : MonoBehaviour, Interactable {
     public void Interact() { }
 
     public void ShowInteractable() {
-        spriteRenderer.enabled = false;
-        doorCollider.enabled = false;
-        audioSource.PlayOneShot(openDoor);
-
+        if (EnabledInteraction) {
+            spriteRenderer.enabled = false;
+            doorCollider.enabled = false;
+            audioSource.PlayOneShot(openDoor);
+        }
     }
 
     public void HideInteractable() {
-        spriteRenderer.enabled = true;
-        doorCollider.enabled = true;
-        audioSource.PlayOneShot(closeDoor);
+        if (EnabledInteraction) {
+            spriteRenderer.enabled = true;
+            doorCollider.enabled = true;
+            audioSource.PlayOneShot(closeDoor);
+        }
     }
 
     public void PlayClosedDoorHit() {
-        audioSource.PlayOneShot(closedDoorHit);
+        if (!EnabledInteraction) {
+                audioSource.PlayOneShot(closedDoorHit);
+            }
     }
 }
