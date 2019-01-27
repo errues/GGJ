@@ -72,6 +72,9 @@ public class ExplorationRoom : Room {
             character.CharacterMovement.EnabledInteraction = false;
             character.CharacterHealth.AssignRoom(this);
 
+            //Limpia la información de audio
+            character.CharacterRoomDetector.ClearRoom();
+
             // Lo mandamos a la posición de inicio de la habitación de combate, después de guardar su posición actual
             character.CharacterMovement.SaveCurrentLocation();
             List<Vector2> path = new List<Vector2>();

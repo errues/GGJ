@@ -7,6 +7,7 @@ public class Character : MonoBehaviour {
     private CharacterHealth characterHealth;
     private CharacterGraphics characterGraphics;
     private CharacterInteractor characterInteractor;
+    private CharacterRoomDetector characterRoomDetector;
 
     public CharacterMovement CharacterMovement {
         get {
@@ -32,10 +33,17 @@ public class Character : MonoBehaviour {
         }
     }
 
+    public CharacterRoomDetector CharacterRoomDetector {
+        get {
+            return characterRoomDetector;
+        }
+    }
+
     private void Awake() {
         characterMovement = GetComponent<CharacterMovement>();
         characterHealth = GetComponent<CharacterHealth>();
         characterGraphics = GetComponent<CharacterGraphics>();
         characterInteractor = GetComponent<CharacterInteractor>();
+        characterRoomDetector = GetComponent<CharacterRoomDetector>();
     }
 }
